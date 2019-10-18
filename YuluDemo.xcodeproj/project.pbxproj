@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690E9235A2B0300738093 /* AppDelegate.swift */; };
+		18B690EC235A2B0300738093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690EB235A2B0300738093 /* ViewController.swift */; };
+		18B690EF235A2B0300738093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B690ED235A2B0300738093 /* Main.storyboard */; };
+		18B690F2235A2B0300738093 /* YuluDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18B690F0235A2B0300738093 /* YuluDemo.xcdatamodeld */; };
+		18B690F4235A2B0400738093 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B690F3235A2B0400738093 /* Assets.xcassets */; };
+		18B690F7235A2B0400738093 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B690F5235A2B0400738093 /* LaunchScreen.storyboard */; };
+		18B69102235A2B0500738093 /* YuluDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B69101235A2B0500738093 /* YuluDemoTests.swift */; };
+		18B6910D235A2B0500738093 /* YuluDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6910C235A2B0500738093 /* YuluDemoUITests.swift */; };
+		18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6911B235A2D5600738093 /* MyPlacesViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18B690FE235A2B0500738093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B690DE235A2B0300738093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B690E5235A2B0300738093;
+			remoteInfo = YuluDemo;
+		};
+		18B69109235A2B0500738093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18B690DE235A2B0300738093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18B690E5235A2B0300738093;
+			remoteInfo = YuluDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18B690E6235A2B0300738093 /* YuluDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuluDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B690E9235A2B0300738093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18B690EB235A2B0300738093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18B690EE235A2B0300738093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18B690F1235A2B0300738093 /* YuluDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YuluDemo.xcdatamodel; sourceTree = "<group>"; };
+		18B690F3235A2B0400738093 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18B690F6235A2B0400738093 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18B690F8235A2B0400738093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B690FD235A2B0500738093 /* YuluDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuluDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B69101235A2B0500738093 /* YuluDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuluDemoTests.swift; sourceTree = "<group>"; };
+		18B69103235A2B0500738093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B69108235A2B0500738093 /* YuluDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YuluDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18B6910C235A2B0500738093 /* YuluDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuluDemoUITests.swift; sourceTree = "<group>"; };
+		18B6910E235A2B0500738093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B6911B235A2D5600738093 /* MyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18B690E3235A2B0300738093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B690FA235A2B0500738093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B69105235A2B0500738093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18B690DD235A2B0300738093 = {
+			isa = PBXGroup;
+			children = (
+				18B690E8235A2B0300738093 /* YuluDemo */,
+				18B69100235A2B0500738093 /* YuluDemoTests */,
+				18B6910B235A2B0500738093 /* YuluDemoUITests */,
+				18B690E7235A2B0300738093 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18B690E7235A2B0300738093 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18B690E6235A2B0300738093 /* YuluDemo.app */,
+				18B690FD235A2B0500738093 /* YuluDemoTests.xctest */,
+				18B69108235A2B0500738093 /* YuluDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18B690E8235A2B0300738093 /* YuluDemo */ = {
+			isa = PBXGroup;
+			children = (
+				18B690E9235A2B0300738093 /* AppDelegate.swift */,
+				18B690EB235A2B0300738093 /* ViewController.swift */,
+				18B6911A235A2C4000738093 /* View */,
+				18B690ED235A2B0300738093 /* Main.storyboard */,
+				18B690F3235A2B0400738093 /* Assets.xcassets */,
+				18B690F5235A2B0400738093 /* LaunchScreen.storyboard */,
+				18B690F8235A2B0400738093 /* Info.plist */,
+				18B690F0235A2B0300738093 /* YuluDemo.xcdatamodeld */,
+			);
+			path = YuluDemo;
+			sourceTree = "<group>";
+		};
+		18B69100235A2B0500738093 /* YuluDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				18B69101235A2B0500738093 /* YuluDemoTests.swift */,
+				18B69103235A2B0500738093 /* Info.plist */,
+			);
+			path = YuluDemoTests;
+			sourceTree = "<group>";
+		};
+		18B6910B235A2B0500738093 /* YuluDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18B6910C235A2B0500738093 /* YuluDemoUITests.swift */,
+				18B6910E235A2B0500738093 /* Info.plist */,
+			);
+			path = YuluDemoUITests;
+			sourceTree = "<group>";
+		};
+		18B6911A235A2C4000738093 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				18B6911B235A2D5600738093 /* MyPlacesViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18B690E5235A2B0300738093 /* YuluDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B69111235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemo" */;
+			buildPhases = (
+				18B690E2235A2B0300738093 /* Sources */,
+				18B690E3235A2B0300738093 /* Frameworks */,
+				18B690E4235A2B0300738093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YuluDemo;
+			productName = YuluDemo;
+			productReference = 18B690E6235A2B0300738093 /* YuluDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18B690FC235A2B0500738093 /* YuluDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B69114235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemoTests" */;
+			buildPhases = (
+				18B690F9235A2B0500738093 /* Sources */,
+				18B690FA235A2B0500738093 /* Frameworks */,
+				18B690FB235A2B0500738093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B690FF235A2B0500738093 /* PBXTargetDependency */,
+			);
+			name = YuluDemoTests;
+			productName = YuluDemoTests;
+			productReference = 18B690FD235A2B0500738093 /* YuluDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18B69107235A2B0500738093 /* YuluDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18B69117235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemoUITests" */;
+			buildPhases = (
+				18B69104235A2B0500738093 /* Sources */,
+				18B69105235A2B0500738093 /* Frameworks */,
+				18B69106235A2B0500738093 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18B6910A235A2B0500738093 /* PBXTargetDependency */,
+			);
+			name = YuluDemoUITests;
+			productName = YuluDemoUITests;
+			productReference = 18B69108235A2B0500738093 /* YuluDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18B690DE235A2B0300738093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Admin;
+				TargetAttributes = {
+					18B690E5235A2B0300738093 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					18B690FC235A2B0500738093 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 18B690E5235A2B0300738093;
+					};
+					18B69107235A2B0500738093 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 18B690E5235A2B0300738093;
+					};
+				};
+			};
+			buildConfigurationList = 18B690E1235A2B0300738093 /* Build configuration list for PBXProject "YuluDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18B690DD235A2B0300738093;
+			productRefGroup = 18B690E7235A2B0300738093 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18B690E5235A2B0300738093 /* YuluDemo */,
+				18B690FC235A2B0500738093 /* YuluDemoTests */,
+				18B69107235A2B0500738093 /* YuluDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18B690E4235A2B0300738093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B690F7235A2B0400738093 /* LaunchScreen.storyboard in Resources */,
+				18B690F4235A2B0400738093 /* Assets.xcassets in Resources */,
+				18B690EF235A2B0300738093 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B690FB235A2B0500738093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B69106235A2B0500738093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18B690E2235A2B0300738093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */,
+				18B690F2235A2B0300738093 /* YuluDemo.xcdatamodeld in Sources */,
+				18B690EC235A2B0300738093 /* ViewController.swift in Sources */,
+				18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B690F9235A2B0500738093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B69102235A2B0500738093 /* YuluDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18B69104235A2B0500738093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B6910D235A2B0500738093 /* YuluDemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18B690FF235A2B0500738093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B690E5235A2B0300738093 /* YuluDemo */;
+			targetProxy = 18B690FE235A2B0500738093 /* PBXContainerItemProxy */;
+		};
+		18B6910A235A2B0500738093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18B690E5235A2B0300738093 /* YuluDemo */;
+			targetProxy = 18B69109235A2B0500738093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18B690ED235A2B0300738093 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B690EE235A2B0300738093 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18B690F5235A2B0400738093 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18B690F6235A2B0400738093 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18B6910F235A2B0500738093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18B69110235A2B0500738093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18B69112235A2B0500738093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YuluDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Demo.YuluDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18B69113235A2B0500738093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YuluDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Demo.YuluDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		18B69115235A2B0500738093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YuluDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Demo.YuluDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuluDemo.app/YuluDemo";
+			};
+			name = Debug;
+		};
+		18B69116235A2B0500738093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YuluDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Demo.YuluDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YuluDemo.app/YuluDemo";
+			};
+			name = Release;
+		};
+		18B69118235A2B0500738093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YuluDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Demo.YuluDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YuluDemo;
+			};
+			name = Debug;
+		};
+		18B69119235A2B0500738093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = YuluDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Demo.YuluDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YuluDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18B690E1235A2B0300738093 /* Build configuration list for PBXProject "YuluDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B6910F235A2B0500738093 /* Debug */,
+				18B69110235A2B0500738093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B69111235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B69112235A2B0500738093 /* Debug */,
+				18B69113235A2B0500738093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B69114235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B69115235A2B0500738093 /* Debug */,
+				18B69116235A2B0500738093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18B69117235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18B69118235A2B0500738093 /* Debug */,
+				18B69119235A2B0500738093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18B690F0235A2B0300738093 /* YuluDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18B690F1235A2B0300738093 /* YuluDemo.xcdatamodel */,
+			);
+			currentVersion = 18B690F1235A2B0300738093 /* YuluDemo.xcdatamodel */;
+			path = YuluDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 18B690DE235A2B0300738093 /* Project object */;
+}
