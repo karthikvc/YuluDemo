@@ -21,7 +21,7 @@ public protocol MyPlacesList {
 }
 
 public protocol MyPlacesListDataProvider {
-    func fetchMovieListFor(_ query:String, completionHandler: @escaping(MyPlacesList?, Error?)->())
+    func fetchMyPlacesListFor(_ query:String, completionHandler: @escaping(MyPlacesList?, Error?)->())
     func cancelTask()
 }
 

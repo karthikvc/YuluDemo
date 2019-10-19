@@ -10,10 +10,15 @@ import UIKit
 
 class MyPlacesViewController: UIViewController {
 
+    private var viewModel:MyPlacesViewModel! // ViewModel
+    
     @IBOutlet weak var myPlaceTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        viewModel = MyPlacesViewModel(dataProvider: MyPlacesAPIDataProvider())
+        
+        viewModel.loadMyPlaces()
         
     }
     

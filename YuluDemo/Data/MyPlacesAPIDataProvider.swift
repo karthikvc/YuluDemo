@@ -9,11 +9,12 @@
 import Foundation
 
 
-struct MyPlacesResources:APIResource {
+struct MyPlacesResources: APIResource {
     
+    typealias Model = MyPlacesJson
     
     var methodPath: String {
-      return " "
+      return "/v1/places"
     }
     
     var queryItems: String
@@ -24,12 +25,17 @@ struct MyPlacesResources:APIResource {
 
 class MyPlacesAPIDataProvider:MyPlacesListDataProvider{
     
-    func fetchMovieListFor(_ query: String, completionHandler: @escaping (MyPlacesList?, Error?) -> ()) {
+    private var apiRequest: APIRequest<MyPlacesResources>?
+    
+    func fetchMyPlacesListFor(_ query: String, completionHandler: @escaping (MyPlacesList?, Error?) -> ()) {
     
         let resource = MyPlacesResources(queryItems: query)
-        let request = APIRequest()
+        print(resource.methodPath)
+        let request = APIRequest(resource: resource)
         
-        
+        request.load { (jsonList,error) in
+            completionHandler(jsonList as! MyPlacesList,error)
+        }
     }
     
     func cancelTask() {

@@ -11,6 +11,7 @@
 		18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */; };
 		18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */; };
 		18AB5FB1235B046000199E0F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB0235B046000199E0F /* APIService.swift */; };
+		18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */; };
 		18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690E9235A2B0300738093 /* AppDelegate.swift */; };
 		18B690EC235A2B0300738093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690EB235A2B0300738093 /* ViewController.swift */; };
 		18B690EF235A2B0300738093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B690ED235A2B0300738093 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplacesListDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesAPIDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FB0235B046000199E0F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesJson.swift; sourceTree = "<group>"; };
 		18B690E6235A2B0300738093 /* YuluDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuluDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B690E9235A2B0300738093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B690EB235A2B0300738093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		18AB5FB2235BA78700199E0F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		18B690DD235A2B0300738093 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +154,7 @@
 				18B6911F235A4E0100738093 /* extension */,
 				18AB5FAA235AEEBD00199E0F /* Data */,
 				18B6911A235A2C4000738093 /* View */,
+				18AB5FB2235BA78700199E0F /* Model */,
 				18AB5FA7235AE29600199E0F /* ViewModel */,
 				18B690F3235A2B0400738093 /* Assets.xcassets */,
 				18B690F5235A2B0400738093 /* LaunchScreen.storyboard */,
@@ -320,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */,
 				18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */,
 				18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */,
 				18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */,
