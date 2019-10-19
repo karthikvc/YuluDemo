@@ -7,3 +7,34 @@
 //
 
 import Foundation
+
+
+struct MyPlacesResources:APIResource {
+    
+    
+    var methodPath: String {
+      return " "
+    }
+    
+    var queryItems: String
+    
+    
+}
+
+
+class MyPlacesAPIDataProvider:MyPlacesListDataProvider{
+    
+    func fetchMovieListFor(_ query: String, completionHandler: @escaping (MyPlacesList?, Error?) -> ()) {
+    
+        let resource = MyPlacesResources(queryItems: query)
+        let request = APIRequest()
+        
+        
+    }
+    
+    func cancelTask() {
+        
+    }
+    
+    
+}

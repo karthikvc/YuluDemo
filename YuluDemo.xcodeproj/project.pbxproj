@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AB5FA9235AE30300199E0F /* MyPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */; };
+		18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */; };
+		18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */; };
+		18AB5FB1235B046000199E0F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB0235B046000199E0F /* APIService.swift */; };
 		18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690E9235A2B0300738093 /* AppDelegate.swift */; };
 		18B690EC235A2B0300738093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690EB235A2B0300738093 /* ViewController.swift */; };
 		18B690EF235A2B0300738093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B690ED235A2B0300738093 /* Main.storyboard */; };
@@ -16,6 +20,8 @@
 		18B69102235A2B0500738093 /* YuluDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B69101235A2B0500738093 /* YuluDemoTests.swift */; };
 		18B6910D235A2B0500738093 /* YuluDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6910C235A2B0500738093 /* YuluDemoUITests.swift */; };
 		18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6911B235A2D5600738093 /* MyPlacesViewController.swift */; };
+		18B6911E235A401800738093 /* MyPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6911D235A401800738093 /* MyPlaceTableViewCell.swift */; };
+		18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B69120235A4E4400738093 /* UIViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewModel.swift; sourceTree = "<group>"; };
+		18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplacesListDataProvider.swift; sourceTree = "<group>"; };
+		18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesAPIDataProvider.swift; sourceTree = "<group>"; };
+		18AB5FB0235B046000199E0F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		18B690E6235A2B0300738093 /* YuluDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuluDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B690E9235A2B0300738093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B690EB235A2B0300738093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +61,8 @@
 		18B6910C235A2B0500738093 /* YuluDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YuluDemoUITests.swift; sourceTree = "<group>"; };
 		18B6910E235A2B0500738093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18B6911B235A2D5600738093 /* MyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewController.swift; sourceTree = "<group>"; };
+		18B6911D235A401800738093 /* MyPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceTableViewCell.swift; sourceTree = "<group>"; };
+		18B69120235A4E4400738093 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +90,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18AB5FA7235AE29600199E0F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		18AB5FAA235AEEBD00199E0F /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */,
+				18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		18AB5FAF235B044500199E0F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				18AB5FB0235B046000199E0F /* APIService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		18B690DD235A2B0300738093 = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +140,14 @@
 			children = (
 				18B690E9235A2B0300738093 /* AppDelegate.swift */,
 				18B690EB235A2B0300738093 /* ViewController.swift */,
+				18AB5FAF235B044500199E0F /* Service */,
+				18B6911F235A4E0100738093 /* extension */,
+				18AB5FAA235AEEBD00199E0F /* Data */,
 				18B6911A235A2C4000738093 /* View */,
-				18B690ED235A2B0300738093 /* Main.storyboard */,
+				18AB5FA7235AE29600199E0F /* ViewModel */,
 				18B690F3235A2B0400738093 /* Assets.xcassets */,
 				18B690F5235A2B0400738093 /* LaunchScreen.storyboard */,
+				18B690ED235A2B0300738093 /* Main.storyboard */,
 				18B690F8235A2B0400738093 /* Info.plist */,
 				18B690F0235A2B0300738093 /* YuluDemo.xcdatamodeld */,
 			);
@@ -135,8 +176,17 @@
 			isa = PBXGroup;
 			children = (
 				18B6911B235A2D5600738093 /* MyPlacesViewController.swift */,
+				18B6911D235A401800738093 /* MyPlaceTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		18B6911F235A4E0100738093 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				18B69120235A4E4400738093 /* UIViewExtension.swift */,
+			);
+			path = extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +320,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */,
+				18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */,
+				18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */,
 				18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */,
+				18AB5FA9235AE30300199E0F /* MyPlacesViewModel.swift in Sources */,
 				18B690F2235A2B0300738093 /* YuluDemo.xcdatamodeld in Sources */,
+				18AB5FB1235B046000199E0F /* APIService.swift in Sources */,
 				18B690EC235A2B0300738093 /* ViewController.swift in Sources */,
+				18B6911E235A401800738093 /* MyPlaceTableViewCell.swift in Sources */,
 				18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

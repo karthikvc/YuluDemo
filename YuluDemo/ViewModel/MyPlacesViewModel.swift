@@ -7,3 +7,10 @@
 //
 
 import Foundation
+
+
+public class MyPlacesViewModel {
+    
+    private var title:String = ""
+    
+}
