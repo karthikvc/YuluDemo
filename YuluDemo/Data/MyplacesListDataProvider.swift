@@ -9,10 +9,12 @@
 import Foundation
 
 public protocol MyplacesListItem {
-    
+    var placeId: String { get }
     var title: String { get }
+    var latitude: Double { get }
+    var longitude: Double { get }
     var imageUrlPath: String? { get }
-    var Description: String { get }
+    var description: String { get }
     
 }
 
@@ -22,13 +24,51 @@ public protocol MyPlacesList {
 
 public protocol MyPlacesListDataProvider {
     func fetchMyPlacesListFor(_ query:String, completionHandler: @escaping(MyPlacesList?, Error?)->())
+    func fetchMyPlaceFor(_ placeId:String, completionHandler: @escaping(MyplacesListItem?, Error?)->())
     func cancelTask()
+}
+
+public protocol MyPlaceDataProvider {
+    
+    
+}
+
+
+public struct MyPlacesListModel:MyPlacesList {
+    public var result: [MyplacesListItem]
+    
+    init(json: [MyPlacesJson]) {
+        
+        result = json.map { MyplacesListItemModel( json: $0) }
+    }
+    
 }
 
 public struct MyplacesListItemModel: MyplacesListItem{
     
-    public let title: String
-    public let imageUrlPath: String?
-    public let Description: String
     
+    public var placeId: String
+    public let title: String
+    public var latitude: Double
+    public var longitude: Double
+    public var imageUrlPath: String?
+    public var description: String
+    
+    init(json : MyPlacesJson ) {
+        
+        title = json.title!
+        placeId = json.id!
+        latitude = json.latitude!
+        longitude = json.longitude!
+        description = ""
+        imageUrlPath = ""
+        if let descrip = json.description {
+            self.description = descrip
+        }
+        
+        if let imgUrl = json.imageUrl {
+            self.imageUrlPath  = imgUrl
+        }
+        
+    }
 }

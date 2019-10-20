@@ -34,7 +34,12 @@ class MyPlacesAPIDataProvider:MyPlacesListDataProvider{
         let request = APIRequest(resource: resource)
         
         request.load { (jsonList,error) in
-            completionHandler(jsonList as! MyPlacesList,error)
+            
+            guard let list = jsonList else { completionHandler (nil,error)
+                return
+            }
+            let placeList = MyPlacesListModel(json: list)
+            completionHandler(placeList,error)
         }
     }
     

@@ -13,6 +13,8 @@ struct MyPlacesJson : Codable {
     let title : String?
     let latitude : Double?
     let longitude : Double?
+    let imageUrl : String?
+    let description : String?
     
     enum CodingKeys: String, CodingKey {
         
@@ -20,6 +22,8 @@ struct MyPlacesJson : Codable {
         case title = "title"
         case latitude = "latitude"
         case longitude = "longitude"
+        case imageUrl = "imageUrl"
+        case description = "description"
     }
     
     init(from decoder: Decoder) throws {
@@ -28,6 +32,8 @@ struct MyPlacesJson : Codable {
         title = try values.decodeIfPresent(String.self, forKey: .title)
         latitude = try values.decodeIfPresent(Double.self, forKey: .latitude)
         longitude = try values.decodeIfPresent(Double.self, forKey: .longitude)
+        imageUrl = try values.decodeIfPresent(String.self, forKey: .imageUrl)
+        description = try values.decodeIfPresent(String.self, forKey: .description)
     }
     
 }

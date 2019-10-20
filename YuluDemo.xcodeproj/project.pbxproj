@@ -12,6 +12,8 @@
 		18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */; };
 		18AB5FB1235B046000199E0F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB0235B046000199E0F /* APIService.swift */; };
 		18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */; };
+		18AB5FB6235C441B00199E0F /* MyPlaceAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB5235C441B00199E0F /* MyPlaceAPIDataProvider.swift */; };
+		18AB5FB9235C9CC700199E0F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB8235C9CC700199E0F /* AppCoordinator.swift */; };
 		18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690E9235A2B0300738093 /* AppDelegate.swift */; };
 		18B690EC235A2B0300738093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690EB235A2B0300738093 /* ViewController.swift */; };
 		18B690EF235A2B0300738093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B690ED235A2B0300738093 /* Main.storyboard */; };
@@ -48,6 +50,8 @@
 		18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesAPIDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FB0235B046000199E0F /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesJson.swift; sourceTree = "<group>"; };
+		18AB5FB5235C441B00199E0F /* MyPlaceAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceAPIDataProvider.swift; sourceTree = "<group>"; };
+		18AB5FB8235C9CC700199E0F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		18B690E6235A2B0300738093 /* YuluDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuluDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B690E9235A2B0300738093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B690EB235A2B0300738093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			children = (
 				18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */,
 				18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */,
+				18AB5FB5235C441B00199E0F /* MyPlaceAPIDataProvider.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -123,6 +128,14 @@
 				18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		18AB5FB7235C9BA300199E0F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				18AB5FB8235C9CC700199E0F /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		18B690DD235A2B0300738093 = {
@@ -150,6 +163,7 @@
 			children = (
 				18B690E9235A2B0300738093 /* AppDelegate.swift */,
 				18B690EB235A2B0300738093 /* ViewController.swift */,
+				18AB5FB7235C9BA300199E0F /* Coordinator */,
 				18AB5FAF235B044500199E0F /* Service */,
 				18B6911F235A4E0100738093 /* extension */,
 				18AB5FAA235AEEBD00199E0F /* Data */,
@@ -333,6 +347,7 @@
 			files = (
 				18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */,
 				18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */,
+				18AB5FB9235C9CC700199E0F /* AppCoordinator.swift in Sources */,
 				18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */,
 				18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */,
 				18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */,
@@ -340,6 +355,7 @@
 				18B690F2235A2B0300738093 /* YuluDemo.xcdatamodeld in Sources */,
 				18AB5FB1235B046000199E0F /* APIService.swift in Sources */,
 				18B690EC235A2B0300738093 /* ViewController.swift in Sources */,
+				18AB5FB6235C441B00199E0F /* MyPlaceAPIDataProvider.swift in Sources */,
 				18B6911E235A401800738093 /* MyPlaceTableViewCell.swift in Sources */,
 				18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */,
 			);
