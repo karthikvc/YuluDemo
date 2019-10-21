@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,15 @@
 		18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */; };
 		18AB5FB6235C441B00199E0F /* MyPlaceAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB5235C441B00199E0F /* MyPlaceAPIDataProvider.swift */; };
 		18AB5FB9235C9CC700199E0F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FB8235C9CC700199E0F /* AppCoordinator.swift */; };
+		18AB5FBB235C9D9500199E0F /* PlacesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FBA235C9D9500199E0F /* PlacesListCoordinator.swift */; };
+		18AB5FBD235C9FD200199E0F /* UIViewControllerExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FBC235C9FD200199E0F /* UIViewControllerExten.swift */; };
+		18AB5FBF235CA19F00199E0F /* UIStoryBoardExten.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FBE235CA19F00199E0F /* UIStoryBoardExten.swift */; };
+		18AB5FC1235CBF2C00199E0F /* DetailViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FC0235CBF2C00199E0F /* DetailViewCoordinator.swift */; };
+		18AB5FC7235CC05600199E0F /* MyPlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FC6235CC05600199E0F /* MyPlaceDetailViewController.swift */; };
+		18AB5FC9235CE40800199E0F /* MyPlaceDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FC8235CE40800199E0F /* MyPlaceDetailViewModel.swift */; };
+		18AB5FCB235D16D600199E0F /* MyPlaceEditViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FCA235D16D600199E0F /* MyPlaceEditViewCoordinator.swift */; };
+		18AB5FCD235D174D00199E0F /* MyPlaceEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FCC235D174D00199E0F /* MyPlaceEditViewController.swift */; };
+		18AB5FCF235D178800199E0F /* MyplaceEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FCE235D178800199E0F /* MyplaceEditViewModel.swift */; };
 		18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690E9235A2B0300738093 /* AppDelegate.swift */; };
 		18B690EC235A2B0300738093 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B690EB235A2B0300738093 /* ViewController.swift */; };
 		18B690EF235A2B0300738093 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B690ED235A2B0300738093 /* Main.storyboard */; };
@@ -25,6 +34,9 @@
 		18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6911B235A2D5600738093 /* MyPlacesViewController.swift */; };
 		18B6911E235A401800738093 /* MyPlaceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B6911D235A401800738093 /* MyPlaceTableViewCell.swift */; };
 		18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B69120235A4E4400738093 /* UIViewExtension.swift */; };
+		359FE3A19D5225F3E808F623 /* Pods_YuluDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F26334CEE5CEC3BDC18B3162 /* Pods_YuluDemo.framework */; };
+		658EEAA69B0D4F47B74527ED /* Pods_YuluDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 645712B80FDDA8726BC507EE /* Pods_YuluDemoUITests.framework */; };
+		F09C01AD0C428C1FDCE7FF2F /* Pods_YuluDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20509E3F782B532654F25ABD /* Pods_YuluDemoTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03DD52B425605787967EB4AC /* Pods-YuluDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuluDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-YuluDemoUITests/Pods-YuluDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewModel.swift; sourceTree = "<group>"; };
 		18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplacesListDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesAPIDataProvider.swift; sourceTree = "<group>"; };
@@ -52,6 +65,15 @@
 		18AB5FB3235BA7C400199E0F /* MyPlacesJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesJson.swift; sourceTree = "<group>"; };
 		18AB5FB5235C441B00199E0F /* MyPlaceAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceAPIDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FB8235C9CC700199E0F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		18AB5FBA235C9D9500199E0F /* PlacesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesListCoordinator.swift; sourceTree = "<group>"; };
+		18AB5FBC235C9FD200199E0F /* UIViewControllerExten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExten.swift; sourceTree = "<group>"; };
+		18AB5FBE235CA19F00199E0F /* UIStoryBoardExten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStoryBoardExten.swift; sourceTree = "<group>"; };
+		18AB5FC0235CBF2C00199E0F /* DetailViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCoordinator.swift; sourceTree = "<group>"; };
+		18AB5FC6235CC05600199E0F /* MyPlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceDetailViewController.swift; sourceTree = "<group>"; };
+		18AB5FC8235CE40800199E0F /* MyPlaceDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceDetailViewModel.swift; sourceTree = "<group>"; };
+		18AB5FCA235D16D600199E0F /* MyPlaceEditViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceEditViewCoordinator.swift; sourceTree = "<group>"; };
+		18AB5FCC235D174D00199E0F /* MyPlaceEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceEditViewController.swift; sourceTree = "<group>"; };
+		18AB5FCE235D178800199E0F /* MyplaceEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplaceEditViewModel.swift; sourceTree = "<group>"; };
 		18B690E6235A2B0300738093 /* YuluDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuluDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B690E9235A2B0300738093 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B690EB235A2B0300738093 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +91,14 @@
 		18B6911B235A2D5600738093 /* MyPlacesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewController.swift; sourceTree = "<group>"; };
 		18B6911D235A401800738093 /* MyPlaceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlaceTableViewCell.swift; sourceTree = "<group>"; };
 		18B69120235A4E4400738093 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		1AE0B99D2C6CFB2643058C54 /* Pods-YuluDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuluDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-YuluDemoTests/Pods-YuluDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		20509E3F782B532654F25ABD /* Pods_YuluDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuluDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		209AE2EDFF2DD360CEA40989 /* Pods-YuluDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuluDemo.debug.xcconfig"; path = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		30B77324EB0D5653FD7941FB /* Pods-YuluDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuluDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-YuluDemoUITests/Pods-YuluDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4CA623B04B86A7469615B3D9 /* Pods-YuluDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuluDemoTests.release.xcconfig"; path = "Target Support Files/Pods-YuluDemoTests/Pods-YuluDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		645712B80FDDA8726BC507EE /* Pods_YuluDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuluDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A361FE333365B4734111454B /* Pods-YuluDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuluDemo.release.xcconfig"; path = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F26334CEE5CEC3BDC18B3162 /* Pods_YuluDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuluDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				359FE3A19D5225F3E808F623 /* Pods_YuluDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F09C01AD0C428C1FDCE7FF2F /* Pods_YuluDemoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658EEAA69B0D4F47B74527ED /* Pods_YuluDemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +133,8 @@
 			isa = PBXGroup;
 			children = (
 				18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */,
+				18AB5FC8235CE40800199E0F /* MyPlaceDetailViewModel.swift */,
+				18AB5FCE235D178800199E0F /* MyplaceEditViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -134,6 +169,9 @@
 			isa = PBXGroup;
 			children = (
 				18AB5FB8235C9CC700199E0F /* AppCoordinator.swift */,
+				18AB5FBA235C9D9500199E0F /* PlacesListCoordinator.swift */,
+				18AB5FC0235CBF2C00199E0F /* DetailViewCoordinator.swift */,
+				18AB5FCA235D16D600199E0F /* MyPlaceEditViewCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -145,6 +183,8 @@
 				18B69100235A2B0500738093 /* YuluDemoTests */,
 				18B6910B235A2B0500738093 /* YuluDemoUITests */,
 				18B690E7235A2B0300738093 /* Products */,
+				67F85BF58987820B7D7ABE60 /* Pods */,
+				FEF84C98C86B057AD033A987 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -202,6 +242,8 @@
 			children = (
 				18B6911B235A2D5600738093 /* MyPlacesViewController.swift */,
 				18B6911D235A401800738093 /* MyPlaceTableViewCell.swift */,
+				18AB5FC6235CC05600199E0F /* MyPlaceDetailViewController.swift */,
+				18AB5FCC235D174D00199E0F /* MyPlaceEditViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -210,8 +252,33 @@
 			isa = PBXGroup;
 			children = (
 				18B69120235A4E4400738093 /* UIViewExtension.swift */,
+				18AB5FBC235C9FD200199E0F /* UIViewControllerExten.swift */,
+				18AB5FBE235CA19F00199E0F /* UIStoryBoardExten.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		67F85BF58987820B7D7ABE60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				209AE2EDFF2DD360CEA40989 /* Pods-YuluDemo.debug.xcconfig */,
+				A361FE333365B4734111454B /* Pods-YuluDemo.release.xcconfig */,
+				1AE0B99D2C6CFB2643058C54 /* Pods-YuluDemoTests.debug.xcconfig */,
+				4CA623B04B86A7469615B3D9 /* Pods-YuluDemoTests.release.xcconfig */,
+				03DD52B425605787967EB4AC /* Pods-YuluDemoUITests.debug.xcconfig */,
+				30B77324EB0D5653FD7941FB /* Pods-YuluDemoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FEF84C98C86B057AD033A987 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F26334CEE5CEC3BDC18B3162 /* Pods_YuluDemo.framework */,
+				20509E3F782B532654F25ABD /* Pods_YuluDemoTests.framework */,
+				645712B80FDDA8726BC507EE /* Pods_YuluDemoUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,9 +288,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B69111235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemo" */;
 			buildPhases = (
+				3FE07C42E4A1C46C35E0D71C /* [CP] Check Pods Manifest.lock */,
 				18B690E2235A2B0300738093 /* Sources */,
 				18B690E3235A2B0300738093 /* Frameworks */,
 				18B690E4235A2B0300738093 /* Resources */,
+				1C21E7A5ED70FAD96632434F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -238,6 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B69114235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemoTests" */;
 			buildPhases = (
+				624A400F205225C83F5C05CD /* [CP] Check Pods Manifest.lock */,
 				18B690F9235A2B0500738093 /* Sources */,
 				18B690FA235A2B0500738093 /* Frameworks */,
 				18B690FB235A2B0500738093 /* Resources */,
@@ -256,6 +326,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B69117235A2B0500738093 /* Build configuration list for PBXNativeTarget "YuluDemoUITests" */;
 			buildPhases = (
+				59843864BEFC814A7DF95F28 /* [CP] Check Pods Manifest.lock */,
 				18B69104235A2B0500738093 /* Sources */,
 				18B69105235A2B0500738093 /* Frameworks */,
 				18B69106235A2B0500738093 /* Resources */,
@@ -340,22 +411,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1C21E7A5ED70FAD96632434F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuluDemo/Pods-YuluDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YuluDemo/Pods-YuluDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YuluDemo/Pods-YuluDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE07C42E4A1C46C35E0D71C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuluDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59843864BEFC814A7DF95F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuluDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		624A400F205225C83F5C05CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YuluDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18B690E2235A2B0300738093 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AB5FC1235CBF2C00199E0F /* DetailViewCoordinator.swift in Sources */,
 				18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */,
 				18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */,
+				18AB5FCD235D174D00199E0F /* MyPlaceEditViewController.swift in Sources */,
+				18AB5FBB235C9D9500199E0F /* PlacesListCoordinator.swift in Sources */,
 				18AB5FB9235C9CC700199E0F /* AppCoordinator.swift in Sources */,
+				18AB5FCF235D178800199E0F /* MyplaceEditViewModel.swift in Sources */,
+				18AB5FC7235CC05600199E0F /* MyPlaceDetailViewController.swift in Sources */,
 				18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */,
 				18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */,
 				18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */,
+				18AB5FBD235C9FD200199E0F /* UIViewControllerExten.swift in Sources */,
+				18AB5FCB235D16D600199E0F /* MyPlaceEditViewCoordinator.swift in Sources */,
 				18AB5FA9235AE30300199E0F /* MyPlacesViewModel.swift in Sources */,
 				18B690F2235A2B0300738093 /* YuluDemo.xcdatamodeld in Sources */,
 				18AB5FB1235B046000199E0F /* APIService.swift in Sources */,
+				18AB5FC9235CE40800199E0F /* MyPlaceDetailViewModel.swift in Sources */,
 				18B690EC235A2B0300738093 /* ViewController.swift in Sources */,
 				18AB5FB6235C441B00199E0F /* MyPlaceAPIDataProvider.swift in Sources */,
+				18AB5FBF235CA19F00199E0F /* UIStoryBoardExten.swift in Sources */,
 				18B6911E235A401800738093 /* MyPlaceTableViewCell.swift in Sources */,
 				18B690EA235A2B0300738093 /* AppDelegate.swift in Sources */,
 			);
@@ -530,6 +696,7 @@
 		};
 		18B69112235A2B0500738093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 209AE2EDFF2DD360CEA40989 /* Pods-YuluDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -547,6 +714,7 @@
 		};
 		18B69113235A2B0500738093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A361FE333365B4734111454B /* Pods-YuluDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +732,7 @@
 		};
 		18B69115235A2B0500738093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AE0B99D2C6CFB2643058C54 /* Pods-YuluDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -584,6 +753,7 @@
 		};
 		18B69116235A2B0500738093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CA623B04B86A7469615B3D9 /* Pods-YuluDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -604,6 +774,7 @@
 		};
 		18B69118235A2B0500738093 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03DD52B425605787967EB4AC /* Pods-YuluDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -623,6 +794,7 @@
 		};
 		18B69119235A2B0500738093 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30B77324EB0D5653FD7941FB /* Pods-YuluDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

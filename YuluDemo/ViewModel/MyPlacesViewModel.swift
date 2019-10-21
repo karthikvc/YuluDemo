@@ -7,6 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+protocol MyplacesListViewModelCoordinatorDelegate: class {
+    
+    func MyplacesViewModelDidSelect(myplace: MyplacesListItem)
+}
+
 
 
 public class MyPlacesViewModel {
@@ -14,14 +21,18 @@ public class MyPlacesViewModel {
     private var myPlaces: [MyplacesListItem] = []
     
     private let dataProvider:MyPlacesListDataProvider // Data provider to fetch search results
+    weak var coordinateDelegate: MyplacesListViewModelCoordinatorDelegate?
     
     // Callback closures
     public var reloadList:(()->())?
     
-     public init(dataProvider:MyPlacesListDataProvider) {
+    public init(dataProvider:MyPlacesListDataProvider) {
        self.dataProvider = dataProvider
     }
     
+    func setCoordinator(coordinater: MyplacesListViewModelCoordinatorDelegate){
+        self.coordinateDelegate = coordinater
+    }
 }
 
 extension MyPlacesViewModel {
@@ -33,9 +44,22 @@ extension MyPlacesViewModel {
             
             strongSelf.reloadList?()
             
-            strongSelf.fetchMyPlaceFor((self?.myPlaces[0].placeId)!, handler: { (error) in
+            DispatchQueue.global().async {
                 
-            })
+                
+                for placeIndex in 0...self!.myPlaces.count-1 {
+                    
+                    strongSelf.fetchMyPlaceFor(( (self?.myPlaces[placeIndex].placeId)!), handler: {[weak self,placeIndex] (fetchplace, error) in
+                       
+                       self?.myPlaces[placeIndex] = fetchplace!
+                    })
+                    
+                }
+                
+                
+            }
+            
+            
         }
     }
     
@@ -51,6 +75,19 @@ extension MyPlacesViewModel {
     public func myPlacesListItem(at indexPath: IndexPath)-> MyplacesListItem?  {
         
         return myPlaces[indexPath.row]
+    }
+    
+    public func myplaceDidSelecte(at indexpath: IndexPath) {
+        let myplace = myPlaces[indexpath.row]
+        if let coordiantor = coordinateDelegate {
+            coordiantor.MyplacesViewModelDidSelect(myplace: myplace)
+        }
+        else {
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let appcoordinator  = appDelegate.appCoordinator
+            coordinateDelegate = appcoordinator?.coordinators[0] as? MyplacesListViewModelCoordinatorDelegate
+            coordinateDelegate!.MyplacesViewModelDidSelect(myplace: myplace)
+        }
     }
     
 }
@@ -73,13 +110,12 @@ extension MyPlacesViewModel{
         }
     }
     
-    private func fetchMyPlaceFor(_ placeId: String, handler:((Error?)->())?) {
+    
+    private func fetchMyPlaceFor(_ placeId: String, handler:@escaping (MyplacesListItem?, Error?)->()) {
         
-        self.dataProvider.fetchMyPlaceFor(placeId) {[weak self] (myplace ,error) in
+        self.dataProvider.fetchMyPlaceFor(placeId) {(myplace ,error) in
             
-            // guard let storngSelf = self else { return }
-            
-            print(myplace )
+            handler(myplace,error)
         }
         
     }

@@ -8,11 +8,18 @@
 
 import UIKit
 
-class MyPlacesViewController: UIViewController {
+class MyPlacesViewController: UIViewController,StoryboardIdentifiable {
 
     private var viewModel:MyPlacesViewModel! // ViewModel
     
     @IBOutlet weak var myPlaceTableView: UITableView!
+    
+    class func controller(viewModel:MyPlacesViewModel) -> MyPlacesViewController {
+        let vc:MyPlacesViewController = UIStoryboard (storyboard: .main).instantiateViewController()
+            vc.viewModel = viewModel
+        return vc
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -60,6 +67,9 @@ extension MyPlacesViewController : UITableViewDelegate, UITableViewDataSource {
         return cell!
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        self.viewModel.myplaceDidSelecte(at: indexPath)
+    }
     
 }

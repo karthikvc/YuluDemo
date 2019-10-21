@@ -28,9 +28,9 @@ public protocol MyPlacesListDataProvider {
     func cancelTask()
 }
 
-public protocol MyPlaceDataProvider {
+public protocol MyPlaceEditDataProvider {
     
-    
+    func updateMyPlace(_ myplace: MyplacesListItem, completionHandler: @escaping(String?,Error?)->())
 }
 
 

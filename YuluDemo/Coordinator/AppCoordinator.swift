@@ -12,3 +12,20 @@ import UIKit
 protocol Coordinator {
     func start()
 }
+
+
+class AppCoordinator:Coordinator {
+    
+    let navigationController:UINavigationController!
+    var coordinators:[Coordinator] = []
+    
+    public init(withNavigationController navigationController:UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func start() {
+        let myplacesListCoordinator = MyPlacesListCoordinator(withNavigationController: self.navigationController)
+        myplacesListCoordinator.start()
+        coordinators.append(myplacesListCoordinator)
+    }
+}
