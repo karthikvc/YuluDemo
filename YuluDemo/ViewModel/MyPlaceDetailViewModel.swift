@@ -20,8 +20,14 @@ public class MyPlaceDetailViewModel {
     
     init(myplace: MyplacesListItem) {
         self.myPlace = myplace
+      
+        NotificationCenter.default.addObserver(self, selector: #selector(self.batteryLevelChanged), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
     }
     
+    deinit {
+        
+        NotificationCenter.default.removeObserver(self)
+    }
 }
 
 extension MyPlaceDetailViewModel {
@@ -65,4 +71,15 @@ extension MyPlaceDetailViewModel {
         coordinateDelegate!.MyplaceEditViewModel(myplace: myPlace!)
     }
     
+    
+    @objc private func batteryLevelChanged(notification: NSNotification){
+        //do stuff using the userInfo property of the notification object
+        print("updating")
+        
+        if let place = notification.object  {
+            // do something with your image
+            myPlace = place as? MyplacesListItemModel
+        }
+        
+    }
 }

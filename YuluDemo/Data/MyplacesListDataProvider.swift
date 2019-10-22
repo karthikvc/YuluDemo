@@ -9,12 +9,12 @@
 import Foundation
 
 public protocol MyplacesListItem {
-    var placeId: String { get }
-    var title: String { get }
+    var placeId: String { get  set }
+    var title: String { get set }
     var latitude: Double { get }
     var longitude: Double { get }
     var imageUrlPath: String? { get }
-    var description: String { get }
+    var description: String { get set }
     
 }
 
@@ -46,9 +46,8 @@ public struct MyPlacesListModel:MyPlacesList {
 
 public struct MyplacesListItemModel: MyplacesListItem{
     
-    
+    public var title: String
     public var placeId: String
-    public let title: String
     public var latitude: Double
     public var longitude: Double
     public var imageUrlPath: String?

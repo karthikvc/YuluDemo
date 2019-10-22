@@ -28,6 +28,7 @@ public class MyPlacesViewModel {
     
     public init(dataProvider:MyPlacesListDataProvider) {
        self.dataProvider = dataProvider
+        NotificationCenter.default.addObserver(self, selector: #selector(self.batteryLevelChanged), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
     }
     
     func setCoordinator(coordinater: MyplacesListViewModelCoordinatorDelegate){
@@ -56,11 +57,17 @@ extension MyPlacesViewModel {
                     
                 }
                 
-                
             }
             
-            
         }
+    }
+    
+    @objc private func batteryLevelChanged(notification: NSNotification){
+        //do stuff using the userInfo property of the notification object
+        print("updating")
+        
+        self.loadMyPlaces()
+        
     }
     
 }

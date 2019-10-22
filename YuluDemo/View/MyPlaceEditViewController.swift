@@ -19,7 +19,7 @@ class MyPlaceEditViewController: UIViewController,StoryboardIdentifiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setUpViewModel()
         // Do any additional setup after loading the view.
     }
     
@@ -27,6 +27,16 @@ class MyPlaceEditViewController: UIViewController,StoryboardIdentifiable {
         let vc:MyPlaceEditViewController = UIStoryboard (storyboard: .main).instantiateViewController()
         vc.viewModel = viewModel
         return vc
+    }
+    
+    private func setUpViewModel() {
+        
+        viewModel.showAlert = { [weak self](message) in
+            if let result = message {
+                self?.showAlert(message: result)
+            }
+            
+        }
     }
     
     
@@ -39,10 +49,31 @@ class MyPlaceEditViewController: UIViewController,StoryboardIdentifiable {
     }
     
     @IBAction func updateCoordinateAction(_ sender: Any) {
+        
+        //self.showAlert()
+        
+        
     }
     
     @IBAction func SaveEditMyplace(_ sender: Any) {
         
+        self.viewModel.updateTitle(title: TitleTextField.text!)
+        self.viewModel.updateMyPlace()
+    }
+    
+    func showAlert(message: String){
+        
+        let alert = UIAlertController(title: "Result", message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+            
+            if message != "Fail" {
+                self.navigationController?.popViewController(animated: true)
+            }
+            
+        }))
+        
+        self.present(alert, animated: true, completion: nil)
         
     }
     

@@ -21,7 +21,7 @@ class MyPlaceEditViewCoordinator:Coordinator {
     
     
     func start() {
-        let vm =  MyPlaceEditViewModel(myplace: self.myplace)
+        let vm =  MyPlaceEditViewModel(myplace: self.myplace, dataProvider: MyplaceUpdateAPIDataProvider())
         let viewController = MyPlaceEditViewController.controller(viewModel: vm)
         self.navigationController .pushViewController(viewController, animated: true)
     }
