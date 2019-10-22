@@ -20,12 +20,7 @@ struct placeEditApiResource: EditApiResource {
     var methodType: String {
         return "PUT"
     }
-    
-    
 }
-
-
-
 
 class MyplaceUpdateAPIDataProvider: MyPlaceEditDataProvider{
     
@@ -39,9 +34,6 @@ class MyplaceUpdateAPIDataProvider: MyPlaceEditDataProvider{
         request.update { (result, error) in
             completionHandler(result,error)
         }
-        
     }
-    
-    
-    
 }
+

@@ -16,6 +16,8 @@ public protocol MyplacesListItem {
     var imageUrlPath: String? { get }
     var description: String { get set }
     
+    init()
+    
 }
 
 public protocol MyPlacesList {
@@ -31,6 +33,11 @@ public protocol MyPlacesListDataProvider {
 public protocol MyPlaceEditDataProvider {
     
     func updateMyPlace(_ myplace: MyplacesListItem, completionHandler: @escaping(String?,Error?)->())
+}
+
+public protocol AddMyPlaceDataProvider {
+    
+    func addMyPlace(_ myplace: MyplacesListItem, completionHandler: @escaping(String?,Error?)->())
 }
 
 
@@ -52,6 +59,16 @@ public struct MyplacesListItemModel: MyplacesListItem{
     public var longitude: Double
     public var imageUrlPath: String?
     public var description: String
+    
+    
+    public init() {
+        
+        title = ""
+        placeId = ""
+        latitude = 0.0
+        longitude = 0.0
+        description = ""
+    }
     
     init(json : MyPlacesJson ) {
         

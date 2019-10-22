@@ -27,6 +27,10 @@ class MyPlacesViewController: UIViewController,StoryboardIdentifiable {
         setUpViewModel()
         viewModel.loadMyPlaces()
         
+        let righrbarbutton = UIBarButtonItem(title:"+", style: .done, target: self, action: #selector(rightButtonAction(sender:)))
+        
+        self.navigationItem.rightBarButtonItem = righrbarbutton
+        
     }
     
     
@@ -70,6 +74,16 @@ extension MyPlacesViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         self.viewModel.myplaceDidSelecte(at: indexPath)
+    }
+    
+    @objc func rightButtonAction(sender: UIBarButtonItem){
+        
+       
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let appcoordinator  = appDelegate.appCoordinator
+            let coordinateDelegate = appcoordinator?.coordinators[0] as? AddMyplacesViewModelCoordinatorDelegate
+            coordinateDelegate!.addMyplaceViewLoad()
+        
     }
     
 }

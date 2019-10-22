@@ -52,3 +52,14 @@ extension MyPlacesListCoordinator :MyplacesDetailViewModelCoordinatorDelegate {
     
     
 }
+
+extension MyPlacesListCoordinator: AddMyplacesViewModelCoordinatorDelegate {
+    func addMyplaceViewLoad() {
+        
+        let addViewCoordinator = AddPlaceViewCoordinator(withNavigationController: self.navigationController)
+        addViewCoordinator.start()
+        
+    }
+    
+    
+}

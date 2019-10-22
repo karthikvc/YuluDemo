@@ -89,11 +89,19 @@ extension EditApiResource {
         return data
     }
     
+    var headerField:String {
+        return "Content-Type"
+    }
+    
+    var headerValue:String {
+        return "Application/json"
+    }
+    
     var urlRequest:URLRequest {
         var urlrequest = URLRequest(url: self.url)
         urlrequest.httpMethod = methodType
        
-        urlrequest.setValue("Application/json", forHTTPHeaderField: "Content-Type")
+        urlrequest.setValue(headerValue, forHTTPHeaderField: headerField)
         do {
             let json = try JSONSerialization.jsonObject(with: jSonData, options: .mutableContainers)
             print(json)

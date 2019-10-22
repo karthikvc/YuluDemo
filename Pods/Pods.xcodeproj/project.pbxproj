@@ -3,81 +3,149 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		0C1885900810601510E0C632060FAF26 /* GooglePlaces */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 480B55FE3ACCAC83A30949D59053CFBD /* Build configuration list for PBXAggregateTarget "GooglePlaces" */;
+			buildPhases = (
+			);
+			dependencies = (
+				BB314D9FD28F9EE0C76AA2ABD22FC78D /* PBXTargetDependency */,
+			);
+			name = GooglePlaces;
+		};
+		885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B4C19445312324B2FC829685DE007C84 /* Build configuration list for PBXAggregateTarget "GooglePlacePicker" */;
+			buildPhases = (
+			);
+			dependencies = (
+				C33B0DAEEBDCDD75F9AF79C9332DEC43 /* PBXTargetDependency */,
+				B5BD3C53A125FD91ACDBEBEDB9843C99 /* PBXTargetDependency */,
+			);
+			name = GooglePlacePicker;
+		};
+		E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = GoogleMaps;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		01076922ED77BC9B4CAF059B8FBBE570 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DD219A211DD9C3A54045144F31DCC7C7 /* NSButton+WebCache.m */; };
-		082252D45616AF575CF4E2E03D50A3F2 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A701C268FE6D70C2F005346E94CA6D9 /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F053AF8F8B75FFDCAEECB88AE98E4AE /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D973562B8ADDE64A612C889F1DD4337 /* SDWebImagePrefetcher.m */; };
-		1063567B5B6505DDD4AFE3E1CC00BF1F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 25EAA047BC2E1A634081C53CAC38C028 /* UIImageView+HighlightedWebCache.m */; };
-		15DCE4F0F51CA8743356F30D3CC5B1EF /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 65A3A0D494A14385E70FB4BDA86E9AD8 /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		237ADA0E438F9B3C7E39B7505216439F /* Pods-YuluDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB4CBBDC3D9C8C38D2778D7AF3A6D87 /* Pods-YuluDemo-dummy.m */; };
-		29F6E6F489A73770776BDE47DFCD7E04 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A15D3297DA2AB213D5F9CE78A814CD /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		01076922ED77BC9B4CAF059B8FBBE570 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D87A981AD1F3511CBC9049047281CA1 /* NSButton+WebCache.m */; };
+		082252D45616AF575CF4E2E03D50A3F2 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A2021431944265641B2184B77FC00CE /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F053AF8F8B75FFDCAEECB88AE98E4AE /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = E1BD964A180005E63FA09610E7E45092 /* SDWebImagePrefetcher.m */; };
+		1063567B5B6505DDD4AFE3E1CC00BF1F /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BEA0B1370749043E7240547732099FAB /* UIImageView+HighlightedWebCache.m */; };
+		15DCE4F0F51CA8743356F30D3CC5B1EF /* NSImage+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 164331DFF2A8401A3297277098A86944 /* NSImage+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29F6E6F489A73770776BDE47DFCD7E04 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = CF31B26B779BDFA361E6A02B95C4222F /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A008986EE836AA788E10CE3B14F0777 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B346D06D281D4D3C396F9BBE3DBF0FFE /* ImageIO.framework */; };
-		2F6892DE92F32DE1C4FA3C6A2FB8B51F /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 34C3761DFFF24C28D1E2DB3255AE5FCA /* SDWebImageCodersManager.m */; };
-		33F1CEE52536E29DD45AD192B08B4EE3 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB3D64455A55EC31D1DD6C0C5395C490 /* SDWebImageTransition.m */; };
-		34A091954B430D2234E81E5C34762AE1 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EC2AA4E2CE33D50FE190F633B8241A6 /* SDImageCacheConfig.m */; };
-		34CF2E7AE3A76CC37A976F0FF8353284 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EA82221851DF74CDE76D8C55F27C09 /* SDImageCache.m */; };
-		378639AD59231D876634C5FB48FA998A /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1E2DCB72430C46B487B0C9CBC9986E /* SDWebImageDownloaderOperation.m */; };
-		392256FCED3BBA7477E48DE431180BB8 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = EB919905939133EB2225CC76A3C873C1 /* NSImage+WebCache.m */; };
-		3D1C0E83EA2E4B4EFDEFF4DF24CBF126 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE7BC75B32647870F2D7558845B1D1A /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		495FC5F0ADC935D14B087E2286247975 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2163A76A81319A0AA26B7285198B5ACD /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4A8248E022B4A719CF4FE54159752626 /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = C433AB95B41DDA9CB85EFE3473ACA9E3 /* SDWebImageImageIOCoder.m */; };
-		4AFFE18F35027F6C4AFAB26CD249BDAE /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = B62AB50DA64A46CC85E35D86ACB1CDEF /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4CE3C53B80C846F9F7F5C8B3C1DF8EC3 /* Pods-YuluDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD107B3F8E74636532D3D22244B2E2E /* Pods-YuluDemoUITests-dummy.m */; };
-		4DBB43822E7B391130C5825F4F7D97A5 /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A81FB0B1162351E85D10C29873E7444 /* SDAnimatedImageRep.m */; };
-		4EF8AF1431BD10AB67A24FC3CEAAC3A4 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = C02C3F50DB5990B306CB03FC20A7B133 /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F3B45CF9957AB861287379C4AF99567 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = 951EB62587A4212686DBFDE5A47305B0 /* UIImage+MemoryCacheCost.m */; };
-		4FE8F4421F089A03E865074C8248958A /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AB5798FAFE667A1ADF2C6DCB0A541106 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		532EEF46CB1AFE9032AC5A0A5AB199C6 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A84483C983C452243905CB1B033AE05E /* UIView+WebCache.m */; };
-		5AE72350B31152226EF977A2184AFB6A /* SDWebImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB02ACBF6BE72C87DCD2266833EB5E4 /* SDWebImageCoder.m */; };
-		5E31EA4F41D3403F7383A51D927C3B15 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F0E9403686238B27D9E33751D404E6B /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FDC312B163F42757D25F518DABBF57D /* SDWebImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 68D2F71767D436165925F3D992A24FF8 /* SDWebImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		611423CC89413541A2057E0FA2E2FE12 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 56548FE6E84B3A2FBFF2D746897081D5 /* SDWebImageCompat.m */; };
-		63EF4181585120C90759211B6AC87D90 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = B1ECB8144F8B9C7DFE04DECA44AAB5E6 /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		640857360E81B506F8336DE8ED1BF0D4 /* Pods-YuluDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B76A4274024BF91CD6BA687602C70ED8 /* Pods-YuluDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		662A17761126CF04BA41671D523BA872 /* SDWebImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BF471F7DB690740F52A7262833626A9D /* SDWebImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66D3B8F67A453804F2B551659F21E652 /* SDWebImageImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = EA4CA9E24239F077A31F6077908E4692 /* SDWebImageImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67209B45C6D3B8C0449B6B1403F96E96 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FBDC36919F2C0875611C16429E0D0D /* UIImage+MultiFormat.m */; };
-		6B84632EAD6D461F4E7F19706A1ECE26 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 367AF212BA32EDB27370E6092A3E1A66 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6ECBB572ECF24F68BAF76D0ACE33FD12 /* SDWebImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = B185C54255BE6D5B4D6FB42F2B2224B6 /* SDWebImageCoderHelper.m */; };
-		7E0D9AA6D80CBC8DE7692D733C720474 /* SDWebImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDD0DD3EB84EAAD12AE4BF2FF410910 /* SDWebImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F6892DE92F32DE1C4FA3C6A2FB8B51F /* SDWebImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 78464A95849CE817C9C954E7A512E0A0 /* SDWebImageCodersManager.m */; };
+		33F1CEE52536E29DD45AD192B08B4EE3 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEF411CAA8DC6FC7D9878D80B785273 /* SDWebImageTransition.m */; };
+		34A091954B430D2234E81E5C34762AE1 /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FBE3B3CAD74BC616D26E867869052 /* SDImageCacheConfig.m */; };
+		34CF2E7AE3A76CC37A976F0FF8353284 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9ACBD5A8EAF49D3691FBD91D74180C /* SDImageCache.m */; };
+		378639AD59231D876634C5FB48FA998A /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9ACEE41597F2B43B88CB40B596AE2F /* SDWebImageDownloaderOperation.m */; };
+		392256FCED3BBA7477E48DE431180BB8 /* NSImage+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 119FA6F7B0256BE58F88D539542719B9 /* NSImage+WebCache.m */; };
+		3D1C0E83EA2E4B4EFDEFF4DF24CBF126 /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = CB4181F6990062B07AFD570000A92ED4 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		495FC5F0ADC935D14B087E2286247975 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = C411E1C41952A019B2A68F47B2AAE42A /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4A8248E022B4A719CF4FE54159752626 /* SDWebImageImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = A0CA20D8C10E5458C47EA232F4F445C8 /* SDWebImageImageIOCoder.m */; };
+		4AFFE18F35027F6C4AFAB26CD249BDAE /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5146CC472A071435C92A31DEB21A4D54 /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CE3C53B80C846F9F7F5C8B3C1DF8EC3 /* Pods-YuluDemoUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 242DAC82D3773FAEA6AC0025B82BCB28 /* Pods-YuluDemoUITests-dummy.m */; };
+		4DBB43822E7B391130C5825F4F7D97A5 /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = EC1FF1B2D6F18189033739C2D285A6A7 /* SDAnimatedImageRep.m */; };
+		4EF8AF1431BD10AB67A24FC3CEAAC3A4 /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = F03D4B874A95B6AB477DC764825B631E /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F3B45CF9957AB861287379C4AF99567 /* UIImage+MemoryCacheCost.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0EF5DEE0CEE8E334B760DCA7B382BF /* UIImage+MemoryCacheCost.m */; };
+		4FE8F4421F089A03E865074C8248958A /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFDE1B42C0C4F7FE76520C688483E32A /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		532EEF46CB1AFE9032AC5A0A5AB199C6 /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = CD39F899F5369BE8E7D6A0338717282D /* UIView+WebCache.m */; };
+		5AE72350B31152226EF977A2184AFB6A /* SDWebImageCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ABC5935A657BC7BF539E42898151DEF /* SDWebImageCoder.m */; };
+		5E31EA4F41D3403F7383A51D927C3B15 /* SDWebImageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 1601D5EE1B30DC4E2B6877A0CC8F2F6F /* SDWebImageManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FDC312B163F42757D25F518DABBF57D /* SDWebImageCoderHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 842182013B12C05D7B9595D6390E0A7B /* SDWebImageCoderHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		611423CC89413541A2057E0FA2E2FE12 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 97079B35F5A13F859722B7E07A4378AD /* SDWebImageCompat.m */; };
+		63EF4181585120C90759211B6AC87D90 /* SDImageCacheConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF5BEEE5D730FE8122CBF635ADDF92C /* SDImageCacheConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		640857360E81B506F8336DE8ED1BF0D4 /* Pods-YuluDemoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A086C45C7FDF6FE509E015362804C1E7 /* Pods-YuluDemoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		662A17761126CF04BA41671D523BA872 /* SDWebImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 314E87B65A86EED7FF95E1CD38B74AA8 /* SDWebImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		66D3B8F67A453804F2B551659F21E652 /* SDWebImageImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BF45D23B9B4FE4F8811959303FD5819 /* SDWebImageImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67209B45C6D3B8C0449B6B1403F96E96 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F8B11D63CA828B60FE228326ECC46528 /* UIImage+MultiFormat.m */; };
+		6B84632EAD6D461F4E7F19706A1ECE26 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = AFEDFA002F595F66697ADA6CD9A8B0A9 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ECBB572ECF24F68BAF76D0ACE33FD12 /* SDWebImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D77102CE1029B510840A74CB4CF4E7B /* SDWebImageCoderHelper.m */; };
+		7E0D9AA6D80CBC8DE7692D733C720474 /* SDWebImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 712AC5E27D0C6D5DC864235DE77F5065 /* SDWebImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85F6D514262A37ADADB6425F9D366DC4 /* Pods-YuluDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D592DF6DF86F02347F56E053935D45C /* Pods-YuluDemo-dummy.m */; };
 		90DD0A8D8249543CEEF4BEDABFCA2C23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
-		9231FB941F688A4A6C960AC7CDE333CE /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D423C0D20D4257B69CCF34E33EC0EDA4 /* UIButton+WebCache.m */; };
-		95433059B9D1CEE3B9CC2A0658A536B7 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 08482268B122C7B265BE1D167E2026E7 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9646B881026786DFF3EA0BE6BA090FB7 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 774490B32BCDB66C6DE1BF4DB07ABE65 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		98D8D4C1F4D1486C9FB3544C4CB2656B /* Pods-YuluDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 827508BC4226097C10007AB7DDFB953F /* Pods-YuluDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A6F863C31E90EE225C011E44405AE62 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 70A1A9F8644626FD20F98998E7D0DBEF /* SDWebImageDownloader.m */; };
-		9FDC7A4A1AB7F8D429B8602E19A624EB /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = ED47CF1AE6CC622473B4DFA0D074F6C2 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A2E22712B35D6903749EDBF7E34ED4A1 /* Pods-YuluDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC305C6B41C77CB504C00595ED3048F0 /* Pods-YuluDemoTests-dummy.m */; };
-		A6B8E64C68F26C6BD5F43BBC6F4F8FBC /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E8AD88624823B55CAD6C82C2B0BB74F /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A89094F3E9C730313FEA4BB2CBF9451C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
-		AEDAA7E9B6708CEC423287CAE9FE83E5 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 37466C050CD034C94EF17473DD0DAE4F /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B847A80DD0242C3A4F0FE6B72A70AE54 /* SDWebImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = FE0701664815C2A3AC38D018DCF962F1 /* SDWebImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA9C02ACAA6371CE9B1297D019AABE00 /* SDWebImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8730F2E56C7234DF9157924369642B78 /* SDWebImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDA09A61D6614B6CD6B244FCAA4AE64B /* Pods-YuluDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C976F7D990A3F7FA76FAE6A826CE989 /* Pods-YuluDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BF8819260EC0FF8AEA312D3952699A75 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = E15CD8D03C6245008CABFA1FFBD6279E /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C32ABCEAC0484DC9803C6EB04E47ADE6 /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F63551DA3D204BF06C04944303B1A90 /* SDWebImageGIFCoder.m */; };
+		9231FB941F688A4A6C960AC7CDE333CE /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 69C280D9F403EFC3F5FE77E1ACDA5BD7 /* UIButton+WebCache.m */; };
+		95433059B9D1CEE3B9CC2A0658A536B7 /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 36E0F94E19B01972ECC325A03ED981C5 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9646B881026786DFF3EA0BE6BA090FB7 /* NSButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2320B2EFBE67BB0FB6BF08D47CB4E9A2 /* NSButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A6F863C31E90EE225C011E44405AE62 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D6CFC29903A1F4DC064B7B829ABEDEB /* SDWebImageDownloader.m */; };
+		9FDC7A4A1AB7F8D429B8602E19A624EB /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = DD6C6E5264827DE5D481354DFEC1F1E8 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2E22712B35D6903749EDBF7E34ED4A1 /* Pods-YuluDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B96C8A13F7F5C7F566C778435849B9EE /* Pods-YuluDemoTests-dummy.m */; };
+		A6B8E64C68F26C6BD5F43BBC6F4F8FBC /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B27F3F12E476D44E0700AD5D8897A98 /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB05AEC9834D3E8DFC59A8CB80AC1BB4 /* Pods-YuluDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA8C5A11C193370FF31AC50E045289AA /* Pods-YuluDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEDAA7E9B6708CEC423287CAE9FE83E5 /* UIView+WebCacheOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 103DDD5E639716E950108D85685DB2A7 /* UIView+WebCacheOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B847A80DD0242C3A4F0FE6B72A70AE54 /* SDWebImageFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = D9F19A227F01B3DD59612D491286F66C /* SDWebImageFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA9C02ACAA6371CE9B1297D019AABE00 /* SDWebImageGIFCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 553B038338F55D2498C6AAAA83C0A6A1 /* SDWebImageGIFCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDA09A61D6614B6CD6B244FCAA4AE64B /* Pods-YuluDemoUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B055938196AB7C22B7583ED92AAFD2D /* Pods-YuluDemoUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF8819260EC0FF8AEA312D3952699A75 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CE892F4D4C53A7D6B3A26D91BD4CBA5 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C32ABCEAC0484DC9803C6EB04E47ADE6 /* SDWebImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = B35019B5E362B868A7ECA91A02D174CE /* SDWebImageGIFCoder.m */; };
 		C33F351322A2A7BA2ED1F18A8011A12F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
-		CAC4DA22DD2694FB3AECB2EFD72E0F44 /* SDWebImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 488D14D0F12382F5A12E3DD4B22065BE /* SDWebImageFrame.m */; };
-		CFBF651BD6065477AB336E4A2A61F623 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DA74CA70FF282B5EA03EAC8A89D1E9B /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D21B5C45428E0F148E056971A90DD435 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E1BF1D1CD1CDE29E6718CA9C660B962 /* UIView+WebCacheOperation.m */; };
-		D7CD8C869BFD9C1B13F498FCE1A5B0E1 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 03A1290233F9B7C2734384C0AF7AA350 /* UIImage+GIF.m */; };
-		DA651534E4CE6211325155C9DB571C7D /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = FDA646C8112C315FA6C82C41B5044305 /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB3F8FE663407E5B48593AFD6E48E766 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = BDD05B14D4E5FE2E02C2B7B5B65005EE /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E283D42B8601D09C23379A371E5EE42A /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 17B1F4420C6ADF04F6FC9D4C33175B2E /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E992F4363E194572061A208A95AAE26B /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F8A1F7DF848DED15980717A50E6B185 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F449AB4FFBF27C134240CAB4CBB9C92F /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C7E4307ECDC9E5924DC542FB9B88D9 /* NSData+ImageContentType.m */; };
-		F5417CE3C0186CFA97A0A8233D3EF020 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7927376A499BAFEF992FD900AC189FF7 /* SDWebImageManager.m */; };
-		F5B945B199E256880DDBF3FA7F4AD3AB /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EFAAA37425FBE69A5E8C4106383C8F /* SDWebImage-dummy.m */; };
+		CAC4DA22DD2694FB3AECB2EFD72E0F44 /* SDWebImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D172BC63DE871F1EDE58529EAAD79B /* SDWebImageFrame.m */; };
+		CFBF651BD6065477AB336E4A2A61F623 /* SDWebImageTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FDFF42AA609958001EA719D75FA77C2 /* SDWebImageTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D21B5C45428E0F148E056971A90DD435 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 42028D7A4F603D3E8B7B8051B84B437F /* UIView+WebCacheOperation.m */; };
+		D7CD8C869BFD9C1B13F498FCE1A5B0E1 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E514B837A3CE08041D87A3C0B38D0508 /* UIImage+GIF.m */; };
+		DA651534E4CE6211325155C9DB571C7D /* UIImage+MemoryCacheCost.h in Headers */ = {isa = PBXBuildFile; fileRef = E7619508DD9D64569D827962E23ED6FF /* UIImage+MemoryCacheCost.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB3F8FE663407E5B48593AFD6E48E766 /* NSData+ImageContentType.h in Headers */ = {isa = PBXBuildFile; fileRef = 809857B28CD850D6B6E5059B2241F805 /* NSData+ImageContentType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DB7F9D7B76A1F089BEBDA4DA7866C91A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
+		E283D42B8601D09C23379A371E5EE42A /* SDWebImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = BF4F95696F5E4433D423320768E8FBE0 /* SDWebImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E992F4363E194572061A208A95AAE26B /* SDAnimatedImageRep.h in Headers */ = {isa = PBXBuildFile; fileRef = 138E390CE507B1A164F08CDA6D711195 /* SDAnimatedImageRep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F449AB4FFBF27C134240CAB4CBB9C92F /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = AFAF131F0903B09D967F0A4C8E09A66F /* NSData+ImageContentType.m */; };
+		F5417CE3C0186CFA97A0A8233D3EF020 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 885D9EC9F5E56A1A24D32AAD5297F17F /* SDWebImageManager.m */; };
+		F5B945B199E256880DDBF3FA7F4AD3AB /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7E09AEF3187176A02BD0035B52FCD4D /* SDWebImage-dummy.m */; };
 		F847E803AFEF61031F4ECE3DFC11CB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */; };
-		F92B5539F330FEFEEF0BAF24807C3B03 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5747199D95DF019B217783C4272CB9F8 /* UIImage+ForceDecode.m */; };
-		F9B16D4445469C1E02982016AAB7A797 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 094460AD401CC38A6F4C9E375558B3FC /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD5D361F9C340B7EB0982B29AF40F13E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 90CC4F7B8EAF6E607011B761082F14F8 /* UIImageView+WebCache.m */; };
+		F92B5539F330FEFEEF0BAF24807C3B03 /* UIImage+ForceDecode.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D70C4FCB50A16B0D53EF49C429B8CA0 /* UIImage+ForceDecode.m */; };
+		F9B16D4445469C1E02982016AAB7A797 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 75688BB06E0E07ECAD43E1D1E4941FE7 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD5D361F9C340B7EB0982B29AF40F13E /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 95ED5A713CCCAFFF712DE1B71ABF403F /* UIImageView+WebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		35E69D0E4CDC23656657C72CBC0D50F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		44915583C8AAB453CB2B8C11E6512027 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		5631E968CAFA04A5717271B8869F8EE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
+		};
+		64F321EDBBFCE8DC19E9CA930363E7B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
+			remoteInfo = SDWebImage;
+		};
+		8137084C7C5FFF0E8CAC2CEE9B455533 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 885917490BC3F1DF8613D63A80B4E196;
+			remoteInfo = GooglePlacePicker;
+		};
 		9464A7F1DDCD8865359EFBF644B92C64 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -85,12 +153,19 @@
 			remoteGlobalIDString = B12317C53E07C143548C10AE97555241;
 			remoteInfo = "Pods-YuluDemo";
 		};
-		99090AC7E919DDA83A245E0E74EE015D /* PBXContainerItemProxy */ = {
+		A9129551B8C423C85CCECB2ADB9523D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3847153A6E5EEFB86565BA840768F429;
-			remoteInfo = SDWebImage;
+			remoteGlobalIDString = 0C1885900810601510E0C632060FAF26;
+			remoteInfo = GooglePlaces;
+		};
+		DB32E74C91B4C711DC0B0CE5A18D8A86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E5B4BBC6DD552AC8943C7E22772FC1D3;
+			remoteInfo = GoogleMaps;
 		};
 		FEB9B6F5A142A02C47A5770BE21E57AD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -102,116 +177,128 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03A1290233F9B7C2734384C0AF7AA350 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
-		08482268B122C7B265BE1D167E2026E7 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		094460AD401CC38A6F4C9E375558B3FC /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
-		0DA74CA70FF282B5EA03EAC8A89D1E9B /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
-		0F63551DA3D204BF06C04944303B1A90 /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = SDWebImage/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
-		149C91E3F5C7AE388A4C8C4A04FA8F4D /* Pods-YuluDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		17B1F4420C6ADF04F6FC9D4C33175B2E /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
-		1BDD0DD3EB84EAAD12AE4BF2FF410910 /* SDWebImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCodersManager.h; path = SDWebImage/SDWebImageCodersManager.h; sourceTree = "<group>"; };
-		1CD107B3F8E74636532D3D22244B2E2E /* Pods-YuluDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YuluDemoUITests-dummy.m"; sourceTree = "<group>"; };
-		1EC2AA4E2CE33D50FE190F633B8241A6 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
-		2163A76A81319A0AA26B7285198B5ACD /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
-		25EAA047BC2E1A634081C53CAC38C028 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
-		2C976F7D990A3F7FA76FAE6A826CE989 /* Pods-YuluDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YuluDemoUITests-umbrella.h"; sourceTree = "<group>"; };
-		34C3761DFFF24C28D1E2DB3255AE5FCA /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = SDWebImage/SDWebImageCodersManager.m; sourceTree = "<group>"; };
-		367AF212BA32EDB27370E6092A3E1A66 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
-		37466C050CD034C94EF17473DD0DAE4F /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
-		3B3A5FE23CAAA611BA62DB7F34A420C0 /* SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDWebImage-Info.plist"; sourceTree = "<group>"; };
-		3D87E02A097E780428879E77D240C59D /* Pods-YuluDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoTests-Info.plist"; sourceTree = "<group>"; };
-		3E8AD88624823B55CAD6C82C2B0BB74F /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
-		3F8A1F7DF848DED15980717A50E6B185 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/SDAnimatedImageRep.h; sourceTree = "<group>"; };
-		42DDE68B98719DA0939C07E25F873FB1 /* Pods-YuluDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YuluDemoUITests.modulemap"; sourceTree = "<group>"; };
-		484A38929CF93F6845D8F0A470B62DF1 /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDWebImage.modulemap; sourceTree = "<group>"; };
-		488D14D0F12382F5A12E3DD4B22065BE /* SDWebImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageFrame.m; path = SDWebImage/SDWebImageFrame.m; sourceTree = "<group>"; };
-		49EFAAA37425FBE69A5E8C4106383C8F /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
-		4A280CBBCF763E71B903509D5573AF9B /* Pods-YuluDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4CC0D9A9757E5B63572A6ACB3BF77BBA /* Pods-YuluDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		4D973562B8ADDE64A612C889F1DD4337 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		56548FE6E84B3A2FBFF2D746897081D5 /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
-		56DA3CADF7578CEF0CF505A496AE1CA0 /* Pods-YuluDemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoUITests-Info.plist"; sourceTree = "<group>"; };
-		5747199D95DF019B217783C4272CB9F8 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
-		58819BD23FCB0CB67D153C470C8D58BF /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
-		5CA8CFB5624103B305C3FA383BD47630 /* Pods-YuluDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YuluDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5DA588DC33946F1D888ED635C50F85D4 /* Pods-YuluDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YuluDemo-frameworks.sh"; sourceTree = "<group>"; };
-		5E1BF1D1CD1CDE29E6718CA9C660B962 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
-		65A3A0D494A14385E70FB4BDA86E9AD8 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
-		68D2F71767D436165925F3D992A24FF8 /* SDWebImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoderHelper.h; path = SDWebImage/SDWebImageCoderHelper.h; sourceTree = "<group>"; };
-		68EA82221851DF74CDE76D8C55F27C09 /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
-		6A635695A299FAA38DC977DB8B14E5D4 /* Pods-YuluDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		03A7D3C8701557663C62D1F18245F91B /* Pods-YuluDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0B9ACBD5A8EAF49D3691FBD91D74180C /* SDImageCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCache.m; path = SDWebImage/SDImageCache.m; sourceTree = "<group>"; };
+		0B9ACEE41597F2B43B88CB40B596AE2F /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		0D592DF6DF86F02347F56E053935D45C /* Pods-YuluDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YuluDemo-dummy.m"; sourceTree = "<group>"; };
+		0D6CFC29903A1F4DC064B7B829ABEDEB /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		0D77102CE1029B510840A74CB4CF4E7B /* SDWebImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoderHelper.m; path = SDWebImage/SDWebImageCoderHelper.m; sourceTree = "<group>"; };
+		0F7FBE3B3CAD74BC616D26E867869052 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/SDImageCacheConfig.m; sourceTree = "<group>"; };
+		103DDD5E639716E950108D85685DB2A7 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		119FA6F7B0256BE58F88D539542719B9 /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
+		138E390CE507B1A164F08CDA6D711195 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/SDAnimatedImageRep.h; sourceTree = "<group>"; };
+		1601D5EE1B30DC4E2B6877A0CC8F2F6F /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
+		164331DFF2A8401A3297277098A86944 /* NSImage+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+WebCache.h"; path = "SDWebImage/NSImage+WebCache.h"; sourceTree = "<group>"; };
+		1ABC5935A657BC7BF539E42898151DEF /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
+		1B055938196AB7C22B7583ED92AAFD2D /* Pods-YuluDemoUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YuluDemoUITests-umbrella.h"; sourceTree = "<group>"; };
+		2320B2EFBE67BB0FB6BF08D47CB4E9A2 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
+		23CED62080891DCC84E483FAA7A9513F /* SDWebImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SDWebImage.xcconfig; sourceTree = "<group>"; };
+		242DAC82D3773FAEA6AC0025B82BCB28 /* Pods-YuluDemoUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YuluDemoUITests-dummy.m"; sourceTree = "<group>"; };
+		2753BFA179BAFE0DDF397499EEA26252 /* Pods-YuluDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2A2A2E3AC6FA82714C8857EA98830750 /* Pods-YuluDemoUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoUITests-Info.plist"; sourceTree = "<group>"; };
+		2BF45D23B9B4FE4F8811959303FD5819 /* SDWebImageImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageImageIOCoder.h; path = SDWebImage/SDWebImageImageIOCoder.h; sourceTree = "<group>"; };
+		2CD90081A5A73A007E8235FC9C4030B1 /* Pods-YuluDemoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoTests-Info.plist"; sourceTree = "<group>"; };
+		2CE892F4D4C53A7D6B3A26D91BD4CBA5 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
+		3030B5DCDE029ECA29C9FB0583502ABC /* Pods-YuluDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		314E87B65A86EED7FF95E1CD38B74AA8 /* SDWebImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoder.h; path = SDWebImage/SDWebImageCoder.h; sourceTree = "<group>"; };
+		33E2679E44EF6BC24BBE59D016E4D40B /* Pods-YuluDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YuluDemo-frameworks.sh"; sourceTree = "<group>"; };
+		36E0F94E19B01972ECC325A03ED981C5 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/SDWebImageDownloader.h; sourceTree = "<group>"; };
+		38B422A92D265BE4EF39C5605DCAFE90 /* Pods-YuluDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YuluDemo.modulemap"; sourceTree = "<group>"; };
+		3A2021431944265641B2184B77FC00CE /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
+		42028D7A4F603D3E8B7B8051B84B437F /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCacheOperation.m"; path = "SDWebImage/UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		4D87A981AD1F3511CBC9049047281CA1 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/NSButton+WebCache.m"; sourceTree = "<group>"; };
+		4FDFF42AA609958001EA719D75FA77C2 /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/SDWebImageTransition.h; sourceTree = "<group>"; };
+		5146CC472A071435C92A31DEB21A4D54 /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
+		53949B8749BE7531DC6E7E4225E3446B /* Pods-YuluDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		550522E2CB617EB18560809D7D586697 /* Pods-YuluDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		553B038338F55D2498C6AAAA83C0A6A1 /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
+		5737B00BD958F66F30F5BE571CE3EA61 /* Pods-YuluDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemo-Info.plist"; sourceTree = "<group>"; };
+		6175FFC5DBC0832C4848CDB041EA08AF /* Pods-YuluDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		69C280D9F403EFC3F5FE77E1ACDA5BD7 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
+		6B27F3F12E476D44E0700AD5D8897A98 /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/UIImage+GIF.h"; sourceTree = "<group>"; };
 		6C7CD3B1C24029B649BA2F7FABA5D04D /* Pods_YuluDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YuluDemo.framework; path = "Pods-YuluDemo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D69A09E62D25D0A2A628BEB2476ED58 /* Pods-YuluDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YuluDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6F0E9403686238B27D9E33751D404E6B /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/SDWebImageManager.h; sourceTree = "<group>"; };
-		6F8ABC50544D56DF250296A136785BCF /* Pods-YuluDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YuluDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		70A1A9F8644626FD20F98998E7D0DBEF /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/SDWebImageDownloader.m; sourceTree = "<group>"; };
+		6CDC90F8FDFEDBF43135C704000087C7 /* GooglePlacePicker.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlacePicker.framework; path = Frameworks/GooglePlacePicker.framework; sourceTree = "<group>"; };
+		712AC5E27D0C6D5DC864235DE77F5065 /* SDWebImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCodersManager.h; path = SDWebImage/SDWebImageCodersManager.h; sourceTree = "<group>"; };
 		7458A52B903C39C9CFC9B6A9BDCC5B2B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74A79160EE866F2D01C25D061B2E77C7 /* Pods-YuluDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		774490B32BCDB66C6DE1BF4DB07ABE65 /* NSButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSButton+WebCache.h"; path = "SDWebImage/NSButton+WebCache.h"; sourceTree = "<group>"; };
-		7927376A499BAFEF992FD900AC189FF7 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
-		827508BC4226097C10007AB7DDFB953F /* Pods-YuluDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YuluDemo-umbrella.h"; sourceTree = "<group>"; };
-		828A25DEAE390DB496A59D361ADCEADE /* Pods-YuluDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YuluDemo.modulemap"; sourceTree = "<group>"; };
-		8730F2E56C7234DF9157924369642B78 /* SDWebImageGIFCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageGIFCoder.h; path = SDWebImage/SDWebImageGIFCoder.h; sourceTree = "<group>"; };
-		8A701C268FE6D70C2F005346E94CA6D9 /* SDWebImageOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOperation.h; path = SDWebImage/SDWebImageOperation.h; sourceTree = "<group>"; };
-		8A81FB0B1162351E85D10C29873E7444 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
-		8BE7BC75B32647870F2D7558845B1D1A /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		8EEB216B10C1484F893F85AFCF48823A /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
-		90CC4F7B8EAF6E607011B761082F14F8 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
-		929DD217CF0E0E0C1F53F47EE79A0583 /* Pods-YuluDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		92FBDC36919F2C0875611C16429E0D0D /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
-		94CCB2901FD3BEAAEC2EF52E9EEF943D /* Pods-YuluDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemo.release.xcconfig"; sourceTree = "<group>"; };
-		951EB62587A4212686DBFDE5A47305B0 /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
+		75688BB06E0E07ECAD43E1D1E4941FE7 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/UIView+WebCache.h"; sourceTree = "<group>"; };
+		77A822BBBD8AE19D46A60B9650569219 /* SDWebImage.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SDWebImage.modulemap; sourceTree = "<group>"; };
+		78464A95849CE817C9C954E7A512E0A0 /* SDWebImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCodersManager.m; path = SDWebImage/SDWebImageCodersManager.m; sourceTree = "<group>"; };
+		7AEE26641D8B44A7F12BE3851CFDD289 /* GooglePlaces.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlaces.xcconfig; sourceTree = "<group>"; };
+		7DBE9B4E6AF34EA4EF394D3B6D62EF3B /* Pods-YuluDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YuluDemoTests.modulemap"; sourceTree = "<group>"; };
+		809857B28CD850D6B6E5059B2241F805 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		82B75CCE7E35F6CE6A05688A73742D1F /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
+		842182013B12C05D7B9595D6390E0A7B /* SDWebImageCoderHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoderHelper.h; path = SDWebImage/SDWebImageCoderHelper.h; sourceTree = "<group>"; };
+		885D9EC9F5E56A1A24D32AAD5297F17F /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/SDWebImageManager.m; sourceTree = "<group>"; };
+		8F00F8C1855281C54027912BE0403479 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		9034B0BFCA0C479CFC0839283A0A4768 /* Pods-YuluDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemo.release.xcconfig"; sourceTree = "<group>"; };
+		905BBF5A4DF26AF880F29FAE75F52529 /* GooglePlacePicker.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GooglePlacePicker.xcconfig; sourceTree = "<group>"; };
+		94B8704AE198E5E1F85D4595CA95C17E /* GooglePlacePicker.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlacePicker.bundle; path = Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle; sourceTree = "<group>"; };
+		95ED5A713CCCAFFF712DE1B71ABF403F /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		97079B35F5A13F859722B7E07A4378AD /* SDWebImageCompat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCompat.m; path = SDWebImage/SDWebImageCompat.m; sourceTree = "<group>"; };
+		99202EB5F1CD55D8906617D26BDE977F /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
 		9CC99CACDAF8DD3CCAD2BA9236F2C0DE /* Pods_YuluDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YuluDemoTests.framework; path = "Pods-YuluDemoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CF5BEEE5D730FE8122CBF635ADDF92C /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
+		9D11F0CBB6EAF9BEF3299CEFE9220DB0 /* Pods-YuluDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YuluDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D70C4FCB50A16B0D53EF49C429B8CA0 /* UIImage+ForceDecode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ForceDecode.m"; path = "SDWebImage/UIImage+ForceDecode.m"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A4C1A5DEC5F79C9C5D674C673EC7F859 /* Pods-YuluDemoUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemoUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A84483C983C452243905CB1B033AE05E /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
-		AA30C4DA835525A2B331B04469C379BA /* Pods-YuluDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
-		AB3D64455A55EC31D1DD6C0C5395C490 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
-		AB5798FAFE667A1ADF2C6DCB0A541106 /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
-		ACB02ACBF6BE72C87DCD2266833EB5E4 /* SDWebImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoder.m; path = SDWebImage/SDWebImageCoder.m; sourceTree = "<group>"; };
+		A086C45C7FDF6FE509E015362804C1E7 /* Pods-YuluDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YuluDemoTests-umbrella.h"; sourceTree = "<group>"; };
+		A0CA20D8C10E5458C47EA232F4F445C8 /* SDWebImageImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageImageIOCoder.m; path = SDWebImage/SDWebImageImageIOCoder.m; sourceTree = "<group>"; };
+		A7B06F49AB10C86749508B4899772A86 /* Pods-YuluDemoUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YuluDemoUITests.modulemap"; sourceTree = "<group>"; };
+		A7ECE64592CCD0DD0791D19557AB25EE /* Pods-YuluDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YuluDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AC0EF5DEE0CEE8E334B760DCA7B382BF /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
+		AD546AE5BAF8B929F881723A82A70370 /* SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDWebImage-Info.plist"; sourceTree = "<group>"; };
+		AFAF131F0903B09D967F0A4C8E09A66F /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		AFEDFA002F595F66697ADA6CD9A8B0A9 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B13E044B76124F53A87FFFE5A18B6437 /* Pods-YuluDemoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-YuluDemoTests.modulemap"; sourceTree = "<group>"; };
-		B185C54255BE6D5B4D6FB42F2B2224B6 /* SDWebImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCoderHelper.m; path = SDWebImage/SDWebImageCoderHelper.m; sourceTree = "<group>"; };
-		B1ECB8144F8B9C7DFE04DECA44AAB5E6 /* SDImageCacheConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheConfig.h; path = SDWebImage/SDImageCacheConfig.h; sourceTree = "<group>"; };
 		B346D06D281D4D3C396F9BBE3DBF0FFE /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
-		B62AB50DA64A46CC85E35D86ACB1CDEF /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/SDWebImageCompat.h; sourceTree = "<group>"; };
-		B76A4274024BF91CD6BA687602C70ED8 /* Pods-YuluDemoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YuluDemoTests-umbrella.h"; sourceTree = "<group>"; };
-		BDD05B14D4E5FE2E02C2B7B5B65005EE /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/NSData+ImageContentType.h"; sourceTree = "<group>"; };
-		BF471F7DB690740F52A7262833626A9D /* SDWebImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCoder.h; path = SDWebImage/SDWebImageCoder.h; sourceTree = "<group>"; };
-		C02C3F50DB5990B306CB03FC20A7B133 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
-		C433AB95B41DDA9CB85EFE3473ACA9E3 /* SDWebImageImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageImageIOCoder.m; path = SDWebImage/SDWebImageImageIOCoder.m; sourceTree = "<group>"; };
-		C61B38801A3B2BD079D628A6DE745D40 /* Pods-YuluDemo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemo-Info.plist"; sourceTree = "<group>"; };
+		B35019B5E362B868A7ECA91A02D174CE /* SDWebImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageGIFCoder.m; path = SDWebImage/SDWebImageGIFCoder.m; sourceTree = "<group>"; };
+		B69A32C9C8B7807E5E1A256D22A48CE8 /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
+		B96C8A13F7F5C7F566C778435849B9EE /* Pods-YuluDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YuluDemoTests-dummy.m"; sourceTree = "<group>"; };
+		B9D172BC63DE871F1EDE58529EAAD79B /* SDWebImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageFrame.m; path = SDWebImage/SDWebImageFrame.m; sourceTree = "<group>"; };
+		BD819A54CEBF65D5E74AEC3273B19DAB /* GoogleMaps.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleMaps.xcconfig; sourceTree = "<group>"; };
+		BEA0B1370749043E7240547732099FAB /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		BF4F95696F5E4433D423320768E8FBE0 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		C411E1C41952A019B2A68F47B2AAE42A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		C7953C27AA9548107C65445C4CF61F8D /* Pods_YuluDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YuluDemoUITests.framework; path = "Pods-YuluDemoUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE1E2DCB72430C46B487B0C9CBC9986E /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
-		D1A15D3297DA2AB213D5F9CE78A814CD /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
-		D423C0D20D4257B69CCF34E33EC0EDA4 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		DD219A211DD9C3A54045144F31DCC7C7 /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/NSButton+WebCache.m"; sourceTree = "<group>"; };
-		E15CD8D03C6245008CABFA1FFBD6279E /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/SDImageCache.h; sourceTree = "<group>"; };
-		EA4CA9E24239F077A31F6077908E4692 /* SDWebImageImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageImageIOCoder.h; path = SDWebImage/SDWebImageImageIOCoder.h; sourceTree = "<group>"; };
-		EB919905939133EB2225CC76A3C873C1 /* NSImage+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+WebCache.m"; path = "SDWebImage/NSImage+WebCache.m"; sourceTree = "<group>"; };
-		EC305C6B41C77CB504C00595ED3048F0 /* Pods-YuluDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YuluDemoTests-dummy.m"; sourceTree = "<group>"; };
-		ED47CF1AE6CC622473B4DFA0D074F6C2 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
-		EDB4CBBDC3D9C8C38D2778D7AF3A6D87 /* Pods-YuluDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YuluDemo-dummy.m"; sourceTree = "<group>"; };
-		F4C7E4307ECDC9E5924DC542FB9B88D9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/NSData+ImageContentType.m"; sourceTree = "<group>"; };
-		FDA646C8112C315FA6C82C41B5044305 /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
-		FE0701664815C2A3AC38D018DCF962F1 /* SDWebImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageFrame.h; path = SDWebImage/SDWebImageFrame.h; sourceTree = "<group>"; };
+		CB4181F6990062B07AFD570000A92ED4 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		CD39F899F5369BE8E7D6A0338717282D /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/UIView+WebCache.m"; sourceTree = "<group>"; };
+		CF31B26B779BDFA361E6A02B95C4222F /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/UIButton+WebCache.h"; sourceTree = "<group>"; };
+		D9EBC78FC78C395E6ED578766792215F /* Pods-YuluDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YuluDemo-resources.sh"; sourceTree = "<group>"; };
+		D9F19A227F01B3DD59612D491286F66C /* SDWebImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageFrame.h; path = SDWebImage/SDWebImageFrame.h; sourceTree = "<group>"; };
+		DD6C6E5264827DE5D481354DFEC1F1E8 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		DFDE1B42C0C4F7FE76520C688483E32A /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
+		E1BD964A180005E63FA09610E7E45092 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		E1D9A3CD1544197AD37EF2178E69E4A9 /* Pods-YuluDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YuluDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		E2448D15E25243AF54EC30E42DCE6C6E /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
+		E514B837A3CE08041D87A3C0B38D0508 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/UIImage+GIF.m"; sourceTree = "<group>"; };
+		E7619508DD9D64569D827962E23ED6FF /* UIImage+MemoryCacheCost.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MemoryCacheCost.h"; path = "SDWebImage/UIImage+MemoryCacheCost.h"; sourceTree = "<group>"; };
+		E7E09AEF3187176A02BD0035B52FCD4D /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
+		EA8C5A11C193370FF31AC50E045289AA /* Pods-YuluDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YuluDemo-umbrella.h"; sourceTree = "<group>"; };
+		EC1FF1B2D6F18189033739C2D285A6A7 /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/SDAnimatedImageRep.m; sourceTree = "<group>"; };
+		EDF2735CDA7C5AD1856ABA5CFB83BF90 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		F03D4B874A95B6AB477DC764825B631E /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
+		F11DABF1CDD0ADFBCD8E981CD3B7A1CD /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		F6BAE268BA11E53C63386407BC6FD268 /* Pods-YuluDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YuluDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F8B11D63CA828B60FE228326ECC46528 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		FAEF411CAA8DC6FC7D9878D80B785273 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/SDWebImageTransition.m; sourceTree = "<group>"; };
+		FFCC464EE241206CED17DA0946DDDD4C /* Pods-YuluDemoUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YuluDemoUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		298599536652752A607A39AA4284C707 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A89094F3E9C730313FEA4BB2CBF9451C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		478F42984AC1820646B29114125B775A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				90DD0A8D8249543CEEF4BEDABFCA2C23 /* Foundation.framework in Frameworks */,
 				2A008986EE836AA788E10CE3B14F0777 /* ImageIO.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		531A6EACB8FB1A57D037B35C5167D88B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB7F9D7B76A1F089BEBDA4DA7866C91A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +321,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BBAABDEAC49E1D13A05BF3464F9847 /* GooglePlacePicker */ = {
+			isa = PBXGroup;
+			children = (
+				13E2B16AB04C2DBFE87C9732F75FFB70 /* Frameworks */,
+				CCA508FA8674BB3787126B55AE524BCA /* Resources */,
+				215AE634DB3ABE32582BB9B63ED29A18 /* Support Files */,
+			);
+			name = GooglePlacePicker;
+			path = GooglePlacePicker;
+			sourceTree = "<group>";
+		};
+		112A701BD150A9A35FC577DCA0FAAE42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2448D15E25243AF54EC30E42DCE6C6E /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		13E2B16AB04C2DBFE87C9732F75FFB70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CDC90F8FDFEDBF43135C704000087C7 /* GooglePlacePicker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,57 +356,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2BB0660F084513B9D7298285A2A29A1C /* Targets Support Files */ = {
+		2080187BE671AD8EB3D3A2AF022D0DCC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				342BA78306B5CB25A48C87B5AEAA0F28 /* Pods-YuluDemo */,
-				4E07B2983C48049EA16FFB080B2E451D /* Pods-YuluDemoTests */,
-				DA5B9F8E55328219A1FD158A1971A185 /* Pods-YuluDemoUITests */,
+				6098355D26FFA8F4573660AD12C76E9C /* Pods-YuluDemo */,
+				B9B45A8EA0AAFF4D1E25B318B7B5D10A /* Pods-YuluDemoTests */,
+				57C8E19464F10606CF6172AEAC85C4E3 /* Pods-YuluDemoUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		342BA78306B5CB25A48C87B5AEAA0F28 /* Pods-YuluDemo */ = {
+		215AE634DB3ABE32582BB9B63ED29A18 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				828A25DEAE390DB496A59D361ADCEADE /* Pods-YuluDemo.modulemap */,
-				6F8ABC50544D56DF250296A136785BCF /* Pods-YuluDemo-acknowledgements.markdown */,
-				929DD217CF0E0E0C1F53F47EE79A0583 /* Pods-YuluDemo-acknowledgements.plist */,
-				EDB4CBBDC3D9C8C38D2778D7AF3A6D87 /* Pods-YuluDemo-dummy.m */,
-				5DA588DC33946F1D888ED635C50F85D4 /* Pods-YuluDemo-frameworks.sh */,
-				C61B38801A3B2BD079D628A6DE745D40 /* Pods-YuluDemo-Info.plist */,
-				827508BC4226097C10007AB7DDFB953F /* Pods-YuluDemo-umbrella.h */,
-				74A79160EE866F2D01C25D061B2E77C7 /* Pods-YuluDemo.debug.xcconfig */,
-				94CCB2901FD3BEAAEC2EF52E9EEF943D /* Pods-YuluDemo.release.xcconfig */,
+				905BBF5A4DF26AF880F29FAE75F52529 /* GooglePlacePicker.xcconfig */,
 			);
-			name = "Pods-YuluDemo";
-			path = "Target Support Files/Pods-YuluDemo";
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlacePicker";
 			sourceTree = "<group>";
 		};
-		472259731D85C0475FDDE11170AF2551 /* SDWebImage */ = {
+		2AD72C422E4DCDA7735FD27C69B45CE8 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				D542B632849C51656D9566D2CE6BB729 /* Core */,
-				BE81A09584336A1AE605AE432CF0119E /* Support Files */,
+				4C763D5F57B0F95FA8CF7B80280C4701 /* Frameworks */,
+				AF60AAD93CEEF04ACBE330B9736B71F3 /* Resources */,
 			);
-			name = SDWebImage;
-			path = SDWebImage;
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		4E07B2983C48049EA16FFB080B2E451D /* Pods-YuluDemoTests */ = {
+		4C763D5F57B0F95FA8CF7B80280C4701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B13E044B76124F53A87FFFE5A18B6437 /* Pods-YuluDemoTests.modulemap */,
-				6D69A09E62D25D0A2A628BEB2476ED58 /* Pods-YuluDemoTests-acknowledgements.markdown */,
-				149C91E3F5C7AE388A4C8C4A04FA8F4D /* Pods-YuluDemoTests-acknowledgements.plist */,
-				EC305C6B41C77CB504C00595ED3048F0 /* Pods-YuluDemoTests-dummy.m */,
-				3D87E02A097E780428879E77D240C59D /* Pods-YuluDemoTests-Info.plist */,
-				B76A4274024BF91CD6BA687602C70ED8 /* Pods-YuluDemoTests-umbrella.h */,
-				4A280CBBCF763E71B903509D5573AF9B /* Pods-YuluDemoTests.debug.xcconfig */,
-				6A635695A299FAA38DC977DB8B14E5D4 /* Pods-YuluDemoTests.release.xcconfig */,
+				F11DABF1CDD0ADFBCD8E981CD3B7A1CD /* GoogleMaps.framework */,
+				82B75CCE7E35F6CE6A05688A73742D1F /* GoogleMapsCore.framework */,
 			);
-			name = "Pods-YuluDemoTests";
-			path = "Target Support Files/Pods-YuluDemoTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		529C106A97FBAD2AED169609A4F34D17 /* Products */ = {
@@ -306,10 +404,108 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		62B72C34195D25016CCD778E716479FF /* Pods */ = {
+		55A3D54BDFD2AA747ED5DAEC9780626B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				472259731D85C0475FDDE11170AF2551 /* SDWebImage */,
+				BD819A54CEBF65D5E74AEC3273B19DAB /* GoogleMaps.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GoogleMaps";
+			sourceTree = "<group>";
+		};
+		57C8E19464F10606CF6172AEAC85C4E3 /* Pods-YuluDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7B06F49AB10C86749508B4899772A86 /* Pods-YuluDemoUITests.modulemap */,
+				FFCC464EE241206CED17DA0946DDDD4C /* Pods-YuluDemoUITests-acknowledgements.markdown */,
+				6175FFC5DBC0832C4848CDB041EA08AF /* Pods-YuluDemoUITests-acknowledgements.plist */,
+				242DAC82D3773FAEA6AC0025B82BCB28 /* Pods-YuluDemoUITests-dummy.m */,
+				2A2A2E3AC6FA82714C8857EA98830750 /* Pods-YuluDemoUITests-Info.plist */,
+				1B055938196AB7C22B7583ED92AAFD2D /* Pods-YuluDemoUITests-umbrella.h */,
+				53949B8749BE7531DC6E7E4225E3446B /* Pods-YuluDemoUITests.debug.xcconfig */,
+				03A7D3C8701557663C62D1F18245F91B /* Pods-YuluDemoUITests.release.xcconfig */,
+			);
+			name = "Pods-YuluDemoUITests";
+			path = "Target Support Files/Pods-YuluDemoUITests";
+			sourceTree = "<group>";
+		};
+		5B3F834FF5A806E356EA1EA4D155EE18 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AEE26641D8B44A7F12BE3851CFDD289 /* GooglePlaces.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GooglePlaces";
+			sourceTree = "<group>";
+		};
+		6098355D26FFA8F4573660AD12C76E9C /* Pods-YuluDemo */ = {
+			isa = PBXGroup;
+			children = (
+				38B422A92D265BE4EF39C5605DCAFE90 /* Pods-YuluDemo.modulemap */,
+				A7ECE64592CCD0DD0791D19557AB25EE /* Pods-YuluDemo-acknowledgements.markdown */,
+				F6BAE268BA11E53C63386407BC6FD268 /* Pods-YuluDemo-acknowledgements.plist */,
+				0D592DF6DF86F02347F56E053935D45C /* Pods-YuluDemo-dummy.m */,
+				33E2679E44EF6BC24BBE59D016E4D40B /* Pods-YuluDemo-frameworks.sh */,
+				5737B00BD958F66F30F5BE571CE3EA61 /* Pods-YuluDemo-Info.plist */,
+				D9EBC78FC78C395E6ED578766792215F /* Pods-YuluDemo-resources.sh */,
+				EA8C5A11C193370FF31AC50E045289AA /* Pods-YuluDemo-umbrella.h */,
+				550522E2CB617EB18560809D7D586697 /* Pods-YuluDemo.debug.xcconfig */,
+				9034B0BFCA0C479CFC0839283A0A4768 /* Pods-YuluDemo.release.xcconfig */,
+			);
+			name = "Pods-YuluDemo";
+			path = "Target Support Files/Pods-YuluDemo";
+			sourceTree = "<group>";
+		};
+		6218FD6C255B920B7E59D0CF26FFBA39 /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				FF858231D515C027F099C13D66137738 /* Base */,
+				2AD72C422E4DCDA7735FD27C69B45CE8 /* Maps */,
+				55A3D54BDFD2AA747ED5DAEC9780626B /* Support Files */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		64C54977A86E1A26F33144AF499D426C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F00F8C1855281C54027912BE0403479 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6DC56F14270BF12046296400D3924817 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77A822BBBD8AE19D46A60B9650569219 /* SDWebImage.modulemap */,
+				23CED62080891DCC84E483FAA7A9513F /* SDWebImage.xcconfig */,
+				E7E09AEF3187176A02BD0035B52FCD4D /* SDWebImage-dummy.m */,
+				AD546AE5BAF8B929F881723A82A70370 /* SDWebImage-Info.plist */,
+				B69A32C9C8B7807E5E1A256D22A48CE8 /* SDWebImage-prefix.pch */,
+				DFDE1B42C0C4F7FE76520C688483E32A /* SDWebImage-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SDWebImage";
+			sourceTree = "<group>";
+		};
+		6EA428F62B476417CA1F5CD452AF015E /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				C623F697A46B2D881BC10C99D8A60615 /* Core */,
+				6DC56F14270BF12046296400D3924817 /* Support Files */,
+			);
+			name = SDWebImage;
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		6EE54D6EF6B8F26E2D0525E91229A76E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6218FD6C255B920B7E59D0CF26FFBA39 /* GoogleMaps */,
+				09BBAABDEAC49E1D13A05BF3464F9847 /* GooglePlacePicker */,
+				CC616763449343D1F26F87D1E53B5A52 /* GooglePlaces */,
+				6EA428F62B476417CA1F5CD452AF015E /* SDWebImage */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -323,18 +519,109 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		BE81A09584336A1AE605AE432CF0119E /* Support Files */ = {
+		AF60AAD93CEEF04ACBE330B9736B71F3 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				484A38929CF93F6845D8F0A470B62DF1 /* SDWebImage.modulemap */,
-				58819BD23FCB0CB67D153C470C8D58BF /* SDWebImage.xcconfig */,
-				49EFAAA37425FBE69A5E8C4106383C8F /* SDWebImage-dummy.m */,
-				3B3A5FE23CAAA611BA62DB7F34A420C0 /* SDWebImage-Info.plist */,
-				8EEB216B10C1484F893F85AFCF48823A /* SDWebImage-prefix.pch */,
-				AB5798FAFE667A1ADF2C6DCB0A541106 /* SDWebImage-umbrella.h */,
+				EDF2735CDA7C5AD1856ABA5CFB83BF90 /* GoogleMaps.bundle */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SDWebImage";
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B9B45A8EA0AAFF4D1E25B318B7B5D10A /* Pods-YuluDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				7DBE9B4E6AF34EA4EF394D3B6D62EF3B /* Pods-YuluDemoTests.modulemap */,
+				9D11F0CBB6EAF9BEF3299CEFE9220DB0 /* Pods-YuluDemoTests-acknowledgements.markdown */,
+				2753BFA179BAFE0DDF397499EEA26252 /* Pods-YuluDemoTests-acknowledgements.plist */,
+				B96C8A13F7F5C7F566C778435849B9EE /* Pods-YuluDemoTests-dummy.m */,
+				2CD90081A5A73A007E8235FC9C4030B1 /* Pods-YuluDemoTests-Info.plist */,
+				A086C45C7FDF6FE509E015362804C1E7 /* Pods-YuluDemoTests-umbrella.h */,
+				3030B5DCDE029ECA29C9FB0583502ABC /* Pods-YuluDemoTests.debug.xcconfig */,
+				E1D9A3CD1544197AD37EF2178E69E4A9 /* Pods-YuluDemoTests.release.xcconfig */,
+			);
+			name = "Pods-YuluDemoTests";
+			path = "Target Support Files/Pods-YuluDemoTests";
+			sourceTree = "<group>";
+		};
+		C623F697A46B2D881BC10C99D8A60615 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				2320B2EFBE67BB0FB6BF08D47CB4E9A2 /* NSButton+WebCache.h */,
+				4D87A981AD1F3511CBC9049047281CA1 /* NSButton+WebCache.m */,
+				809857B28CD850D6B6E5059B2241F805 /* NSData+ImageContentType.h */,
+				AFAF131F0903B09D967F0A4C8E09A66F /* NSData+ImageContentType.m */,
+				164331DFF2A8401A3297277098A86944 /* NSImage+WebCache.h */,
+				119FA6F7B0256BE58F88D539542719B9 /* NSImage+WebCache.m */,
+				138E390CE507B1A164F08CDA6D711195 /* SDAnimatedImageRep.h */,
+				EC1FF1B2D6F18189033739C2D285A6A7 /* SDAnimatedImageRep.m */,
+				2CE892F4D4C53A7D6B3A26D91BD4CBA5 /* SDImageCache.h */,
+				0B9ACBD5A8EAF49D3691FBD91D74180C /* SDImageCache.m */,
+				9CF5BEEE5D730FE8122CBF635ADDF92C /* SDImageCacheConfig.h */,
+				0F7FBE3B3CAD74BC616D26E867869052 /* SDImageCacheConfig.m */,
+				314E87B65A86EED7FF95E1CD38B74AA8 /* SDWebImageCoder.h */,
+				1ABC5935A657BC7BF539E42898151DEF /* SDWebImageCoder.m */,
+				842182013B12C05D7B9595D6390E0A7B /* SDWebImageCoderHelper.h */,
+				0D77102CE1029B510840A74CB4CF4E7B /* SDWebImageCoderHelper.m */,
+				712AC5E27D0C6D5DC864235DE77F5065 /* SDWebImageCodersManager.h */,
+				78464A95849CE817C9C954E7A512E0A0 /* SDWebImageCodersManager.m */,
+				5146CC472A071435C92A31DEB21A4D54 /* SDWebImageCompat.h */,
+				97079B35F5A13F859722B7E07A4378AD /* SDWebImageCompat.m */,
+				36E0F94E19B01972ECC325A03ED981C5 /* SDWebImageDownloader.h */,
+				0D6CFC29903A1F4DC064B7B829ABEDEB /* SDWebImageDownloader.m */,
+				CB4181F6990062B07AFD570000A92ED4 /* SDWebImageDownloaderOperation.h */,
+				0B9ACEE41597F2B43B88CB40B596AE2F /* SDWebImageDownloaderOperation.m */,
+				D9F19A227F01B3DD59612D491286F66C /* SDWebImageFrame.h */,
+				B9D172BC63DE871F1EDE58529EAAD79B /* SDWebImageFrame.m */,
+				553B038338F55D2498C6AAAA83C0A6A1 /* SDWebImageGIFCoder.h */,
+				B35019B5E362B868A7ECA91A02D174CE /* SDWebImageGIFCoder.m */,
+				2BF45D23B9B4FE4F8811959303FD5819 /* SDWebImageImageIOCoder.h */,
+				A0CA20D8C10E5458C47EA232F4F445C8 /* SDWebImageImageIOCoder.m */,
+				1601D5EE1B30DC4E2B6877A0CC8F2F6F /* SDWebImageManager.h */,
+				885D9EC9F5E56A1A24D32AAD5297F17F /* SDWebImageManager.m */,
+				3A2021431944265641B2184B77FC00CE /* SDWebImageOperation.h */,
+				BF4F95696F5E4433D423320768E8FBE0 /* SDWebImagePrefetcher.h */,
+				E1BD964A180005E63FA09610E7E45092 /* SDWebImagePrefetcher.m */,
+				4FDFF42AA609958001EA719D75FA77C2 /* SDWebImageTransition.h */,
+				FAEF411CAA8DC6FC7D9878D80B785273 /* SDWebImageTransition.m */,
+				CF31B26B779BDFA361E6A02B95C4222F /* UIButton+WebCache.h */,
+				69C280D9F403EFC3F5FE77E1ACDA5BD7 /* UIButton+WebCache.m */,
+				F03D4B874A95B6AB477DC764825B631E /* UIImage+ForceDecode.h */,
+				9D70C4FCB50A16B0D53EF49C429B8CA0 /* UIImage+ForceDecode.m */,
+				6B27F3F12E476D44E0700AD5D8897A98 /* UIImage+GIF.h */,
+				E514B837A3CE08041D87A3C0B38D0508 /* UIImage+GIF.m */,
+				E7619508DD9D64569D827962E23ED6FF /* UIImage+MemoryCacheCost.h */,
+				AC0EF5DEE0CEE8E334B760DCA7B382BF /* UIImage+MemoryCacheCost.m */,
+				AFEDFA002F595F66697ADA6CD9A8B0A9 /* UIImage+MultiFormat.h */,
+				F8B11D63CA828B60FE228326ECC46528 /* UIImage+MultiFormat.m */,
+				DD6C6E5264827DE5D481354DFEC1F1E8 /* UIImageView+HighlightedWebCache.h */,
+				BEA0B1370749043E7240547732099FAB /* UIImageView+HighlightedWebCache.m */,
+				C411E1C41952A019B2A68F47B2AAE42A /* UIImageView+WebCache.h */,
+				95ED5A713CCCAFFF712DE1B71ABF403F /* UIImageView+WebCache.m */,
+				75688BB06E0E07ECAD43E1D1E4941FE7 /* UIView+WebCache.h */,
+				CD39F899F5369BE8E7D6A0338717282D /* UIView+WebCache.m */,
+				103DDD5E639716E950108D85685DB2A7 /* UIView+WebCacheOperation.h */,
+				42028D7A4F603D3E8B7B8051B84B437F /* UIView+WebCacheOperation.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		CC616763449343D1F26F87D1E53B5A52 /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				64C54977A86E1A26F33144AF499D426C /* Frameworks */,
+				112A701BD150A9A35FC577DCA0FAAE42 /* Resources */,
+				5B3F834FF5A806E356EA1EA4D155EE18 /* Support Files */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		CCA508FA8674BB3787126B55AE524BCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94B8704AE198E5E1F85D4595CA95C17E /* GooglePlacePicker.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -342,88 +629,26 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				62B72C34195D25016CCD778E716479FF /* Pods */,
+				6EE54D6EF6B8F26E2D0525E91229A76E /* Pods */,
 				529C106A97FBAD2AED169609A4F34D17 /* Products */,
-				2BB0660F084513B9D7298285A2A29A1C /* Targets Support Files */,
+				2080187BE671AD8EB3D3A2AF022D0DCC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D542B632849C51656D9566D2CE6BB729 /* Core */ = {
+		D5FC2736C1C9E47D30D0DC7D983F7147 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				774490B32BCDB66C6DE1BF4DB07ABE65 /* NSButton+WebCache.h */,
-				DD219A211DD9C3A54045144F31DCC7C7 /* NSButton+WebCache.m */,
-				BDD05B14D4E5FE2E02C2B7B5B65005EE /* NSData+ImageContentType.h */,
-				F4C7E4307ECDC9E5924DC542FB9B88D9 /* NSData+ImageContentType.m */,
-				65A3A0D494A14385E70FB4BDA86E9AD8 /* NSImage+WebCache.h */,
-				EB919905939133EB2225CC76A3C873C1 /* NSImage+WebCache.m */,
-				3F8A1F7DF848DED15980717A50E6B185 /* SDAnimatedImageRep.h */,
-				8A81FB0B1162351E85D10C29873E7444 /* SDAnimatedImageRep.m */,
-				E15CD8D03C6245008CABFA1FFBD6279E /* SDImageCache.h */,
-				68EA82221851DF74CDE76D8C55F27C09 /* SDImageCache.m */,
-				B1ECB8144F8B9C7DFE04DECA44AAB5E6 /* SDImageCacheConfig.h */,
-				1EC2AA4E2CE33D50FE190F633B8241A6 /* SDImageCacheConfig.m */,
-				BF471F7DB690740F52A7262833626A9D /* SDWebImageCoder.h */,
-				ACB02ACBF6BE72C87DCD2266833EB5E4 /* SDWebImageCoder.m */,
-				68D2F71767D436165925F3D992A24FF8 /* SDWebImageCoderHelper.h */,
-				B185C54255BE6D5B4D6FB42F2B2224B6 /* SDWebImageCoderHelper.m */,
-				1BDD0DD3EB84EAAD12AE4BF2FF410910 /* SDWebImageCodersManager.h */,
-				34C3761DFFF24C28D1E2DB3255AE5FCA /* SDWebImageCodersManager.m */,
-				B62AB50DA64A46CC85E35D86ACB1CDEF /* SDWebImageCompat.h */,
-				56548FE6E84B3A2FBFF2D746897081D5 /* SDWebImageCompat.m */,
-				08482268B122C7B265BE1D167E2026E7 /* SDWebImageDownloader.h */,
-				70A1A9F8644626FD20F98998E7D0DBEF /* SDWebImageDownloader.m */,
-				8BE7BC75B32647870F2D7558845B1D1A /* SDWebImageDownloaderOperation.h */,
-				CE1E2DCB72430C46B487B0C9CBC9986E /* SDWebImageDownloaderOperation.m */,
-				FE0701664815C2A3AC38D018DCF962F1 /* SDWebImageFrame.h */,
-				488D14D0F12382F5A12E3DD4B22065BE /* SDWebImageFrame.m */,
-				8730F2E56C7234DF9157924369642B78 /* SDWebImageGIFCoder.h */,
-				0F63551DA3D204BF06C04944303B1A90 /* SDWebImageGIFCoder.m */,
-				EA4CA9E24239F077A31F6077908E4692 /* SDWebImageImageIOCoder.h */,
-				C433AB95B41DDA9CB85EFE3473ACA9E3 /* SDWebImageImageIOCoder.m */,
-				6F0E9403686238B27D9E33751D404E6B /* SDWebImageManager.h */,
-				7927376A499BAFEF992FD900AC189FF7 /* SDWebImageManager.m */,
-				8A701C268FE6D70C2F005346E94CA6D9 /* SDWebImageOperation.h */,
-				17B1F4420C6ADF04F6FC9D4C33175B2E /* SDWebImagePrefetcher.h */,
-				4D973562B8ADDE64A612C889F1DD4337 /* SDWebImagePrefetcher.m */,
-				0DA74CA70FF282B5EA03EAC8A89D1E9B /* SDWebImageTransition.h */,
-				AB3D64455A55EC31D1DD6C0C5395C490 /* SDWebImageTransition.m */,
-				D1A15D3297DA2AB213D5F9CE78A814CD /* UIButton+WebCache.h */,
-				D423C0D20D4257B69CCF34E33EC0EDA4 /* UIButton+WebCache.m */,
-				C02C3F50DB5990B306CB03FC20A7B133 /* UIImage+ForceDecode.h */,
-				5747199D95DF019B217783C4272CB9F8 /* UIImage+ForceDecode.m */,
-				3E8AD88624823B55CAD6C82C2B0BB74F /* UIImage+GIF.h */,
-				03A1290233F9B7C2734384C0AF7AA350 /* UIImage+GIF.m */,
-				FDA646C8112C315FA6C82C41B5044305 /* UIImage+MemoryCacheCost.h */,
-				951EB62587A4212686DBFDE5A47305B0 /* UIImage+MemoryCacheCost.m */,
-				367AF212BA32EDB27370E6092A3E1A66 /* UIImage+MultiFormat.h */,
-				92FBDC36919F2C0875611C16429E0D0D /* UIImage+MultiFormat.m */,
-				ED47CF1AE6CC622473B4DFA0D074F6C2 /* UIImageView+HighlightedWebCache.h */,
-				25EAA047BC2E1A634081C53CAC38C028 /* UIImageView+HighlightedWebCache.m */,
-				2163A76A81319A0AA26B7285198B5ACD /* UIImageView+WebCache.h */,
-				90CC4F7B8EAF6E607011B761082F14F8 /* UIImageView+WebCache.m */,
-				094460AD401CC38A6F4C9E375558B3FC /* UIView+WebCache.h */,
-				A84483C983C452243905CB1B033AE05E /* UIView+WebCache.m */,
-				37466C050CD034C94EF17473DD0DAE4F /* UIView+WebCacheOperation.h */,
-				5E1BF1D1CD1CDE29E6718CA9C660B962 /* UIView+WebCacheOperation.m */,
+				99202EB5F1CD55D8906617D26BDE977F /* GoogleMapsBase.framework */,
 			);
-			name = Core;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DA5B9F8E55328219A1FD158A1971A185 /* Pods-YuluDemoUITests */ = {
+		FF858231D515C027F099C13D66137738 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				42DDE68B98719DA0939C07E25F873FB1 /* Pods-YuluDemoUITests.modulemap */,
-				5CA8CFB5624103B305C3FA383BD47630 /* Pods-YuluDemoUITests-acknowledgements.markdown */,
-				A4C1A5DEC5F79C9C5D674C673EC7F859 /* Pods-YuluDemoUITests-acknowledgements.plist */,
-				1CD107B3F8E74636532D3D22244B2E2E /* Pods-YuluDemoUITests-dummy.m */,
-				56DA3CADF7578CEF0CF505A496AE1CA0 /* Pods-YuluDemoUITests-Info.plist */,
-				2C976F7D990A3F7FA76FAE6A826CE989 /* Pods-YuluDemoUITests-umbrella.h */,
-				4CC0D9A9757E5B63572A6ACB3BF77BBA /* Pods-YuluDemoUITests.debug.xcconfig */,
-				AA30C4DA835525A2B331B04469C379BA /* Pods-YuluDemoUITests.release.xcconfig */,
+				D5FC2736C1C9E47D30D0DC7D983F7147 /* Frameworks */,
 			);
-			name = "Pods-YuluDemoUITests";
-			path = "Target Support Files/Pods-YuluDemoUITests";
+			name = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -434,6 +659,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				640857360E81B506F8336DE8ED1BF0D4 /* Pods-YuluDemoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		744BFB105AF8F041E4921623CA782B6D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB05AEC9834D3E8DFC59A8CB80AC1BB4 /* Pods-YuluDemo-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,14 +714,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C946D7126F7B60A80A4DAB5056D3DE3E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98D8D4C1F4D1486C9FB3544C4CB2656B /* Pods-YuluDemo-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -512,17 +737,20 @@
 		};
 		B12317C53E07C143548C10AE97555241 /* Pods-YuluDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4DF24A15F690A5B285985FB0FB838A9 /* Build configuration list for PBXNativeTarget "Pods-YuluDemo" */;
+			buildConfigurationList = 30956B8617B8C0547ACB8D743B5E7AF4 /* Build configuration list for PBXNativeTarget "Pods-YuluDemo" */;
 			buildPhases = (
-				C946D7126F7B60A80A4DAB5056D3DE3E /* Headers */,
-				39FC941B338A8B0F1C8024BF1DB05D4B /* Sources */,
-				298599536652752A607A39AA4284C707 /* Frameworks */,
-				4FDC654F20639166E008C2A1C7F3F0DF /* Resources */,
+				744BFB105AF8F041E4921623CA782B6D /* Headers */,
+				A4974D5BED0730E67871E3420C94E3C3 /* Sources */,
+				531A6EACB8FB1A57D037B35C5167D88B /* Frameworks */,
+				1F8B08C5D22D23479BD7D9A84A6D3EA6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				188BF6AD27CFFEC11E6DF02309BB5B6E /* PBXTargetDependency */,
+				2884F3CFEF8C7B37FFE8FF8D2473C670 /* PBXTargetDependency */,
+				27594FD4CF67CAB32DBFB572D2D14D4C /* PBXTargetDependency */,
+				18D00C52D12E8CF1AA942AF467E1A0DF /* PBXTargetDependency */,
+				C6E3A5FAFE5A6CEDDDCF074F4634D28E /* PBXTargetDependency */,
 			);
 			name = "Pods-YuluDemo";
 			productName = "Pods-YuluDemo";
@@ -577,7 +805,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -588,6 +816,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */,
+				885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */,
+				0C1885900810601510E0C632060FAF26 /* GooglePlaces */,
 				B12317C53E07C143548C10AE97555241 /* Pods-YuluDemo */,
 				E828421DAA1AD1E2FB8288E78B76D26F /* Pods-YuluDemoTests */,
 				FFF7F5242F7A46057454915D33FDAAA8 /* Pods-YuluDemoUITests */,
@@ -597,6 +828,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		1F8B08C5D22D23479BD7D9A84A6D3EA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		364616CA151588E77CABC314C69095AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -605,13 +843,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4E645F6DD964E866615BEFB7A5BE7E68 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		4FDC654F20639166E008C2A1C7F3F0DF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -628,14 +859,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		39FC941B338A8B0F1C8024BF1DB05D4B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				237ADA0E438F9B3C7E39B7505216439F /* Pods-YuluDemo-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		58325136D6224015891AB413806601BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -687,14 +910,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A4974D5BED0730E67871E3420C94E3C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85F6D514262A37ADADB6425F9D366DC4 /* Pods-YuluDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		188BF6AD27CFFEC11E6DF02309BB5B6E /* PBXTargetDependency */ = {
+		18D00C52D12E8CF1AA942AF467E1A0DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SDWebImage;
-			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
-			targetProxy = 99090AC7E919DDA83A245E0E74EE015D /* PBXContainerItemProxy */;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = A9129551B8C423C85CCECB2ADB9523D0 /* PBXContainerItemProxy */;
+		};
+		27594FD4CF67CAB32DBFB572D2D14D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlacePicker;
+			target = 885917490BC3F1DF8613D63A80B4E196 /* GooglePlacePicker */;
+			targetProxy = 8137084C7C5FFF0E8CAC2CEE9B455533 /* PBXContainerItemProxy */;
+		};
+		2884F3CFEF8C7B37FFE8FF8D2473C670 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 5631E968CAFA04A5717271B8869F8EE0 /* PBXContainerItemProxy */;
 		};
 		427D351F404FF0E94805FC8475A8CFB6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -708,12 +951,36 @@
 			target = B12317C53E07C143548C10AE97555241 /* Pods-YuluDemo */;
 			targetProxy = FEB9B6F5A142A02C47A5770BE21E57AD /* PBXContainerItemProxy */;
 		};
+		B5BD3C53A125FD91ACDBEBEDB9843C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GooglePlaces;
+			target = 0C1885900810601510E0C632060FAF26 /* GooglePlaces */;
+			targetProxy = 35E69D0E4CDC23656657C72CBC0D50F5 /* PBXContainerItemProxy */;
+		};
+		BB314D9FD28F9EE0C76AA2ABD22FC78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = 44915583C8AAB453CB2B8C11E6512027 /* PBXContainerItemProxy */;
+		};
+		C33B0DAEEBDCDD75F9AF79C9332DEC43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GoogleMaps;
+			target = E5B4BBC6DD552AC8943C7E22772FC1D3 /* GoogleMaps */;
+			targetProxy = DB32E74C91B4C711DC0B0CE5A18D8A86 /* PBXContainerItemProxy */;
+		};
+		C6E3A5FAFE5A6CEDDDCF074F4634D28E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SDWebImage;
+			target = 3847153A6E5EEFB86565BA840768F429 /* SDWebImage */;
+			targetProxy = 64F321EDBBFCE8DC19E9CA930363E7B4 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1D465BEE207A753A30216C190FDCDB04 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6A635695A299FAA38DC977DB8B14E5D4 /* Pods-YuluDemoTests.release.xcconfig */;
+			baseConfigurationReference = E1D9A3CD1544197AD37EF2178E69E4A9 /* Pods-YuluDemoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -750,9 +1017,26 @@
 			};
 			name = Release;
 		};
+		2C1C4625A069FBBE1AA822F8E0C646B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905BBF5A4DF26AF880F29FAE75F52529 /* GooglePlacePicker.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		31FB5ED3753BD2829C89AFDD18501760 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4A280CBBCF763E71B903509D5573AF9B /* Pods-YuluDemoTests.debug.xcconfig */;
+			baseConfigurationReference = 3030B5DCDE029ECA29C9FB0583502ABC /* Pods-YuluDemoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -790,7 +1074,7 @@
 		};
 		32F2678F824A3C34B36E18A227A8DE1E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA30C4DA835525A2B331B04469C379BA /* Pods-YuluDemoUITests.release.xcconfig */;
+			baseConfigurationReference = 03A7D3C8701557663C62D1F18245F91B /* Pods-YuluDemoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -829,7 +1113,7 @@
 		};
 		34805920EB412D6A3D5CFDF770626F29 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CC0D9A9757E5B63572A6ACB3BF77BBA /* Pods-YuluDemoUITests.debug.xcconfig */;
+			baseConfigurationReference = 53949B8749BE7531DC6E7E4225E3446B /* Pods-YuluDemoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -865,48 +1149,41 @@
 			};
 			name = Debug;
 		};
-		3EAD55A0276A8FE3476AE5A832B653D4 /* Release */ = {
+		4AA46832D8A16AA4E4811383B204D2A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94CCB2901FD3BEAAEC2EF52E9EEF943D /* Pods-YuluDemo.release.xcconfig */;
+			baseConfigurationReference = BD819A54CEBF65D5E74AEC3273B19DAB /* GoogleMaps.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
+		};
+		595DD5539089161955FE3C7084B0C9B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905BBF5A4DF26AF880F29FAE75F52529 /* GooglePlacePicker.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 		5FA0246FAFCA91BEA3D1CDC330EF915D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58819BD23FCB0CB67D153C470C8D58BF /* SDWebImage.xcconfig */;
+			baseConfigurationReference = 23CED62080891DCC84E483FAA7A9513F /* SDWebImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1004,6 +1281,60 @@
 			};
 			name = Debug;
 		};
+		6CEFD4A0FF7D85887390E5ED002003D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEE26641D8B44A7F12BE3851CFDD289 /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1CFFC16252D6F2A51A157F59B901379 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 550522E2CB617EB18560809D7D586697 /* Pods-YuluDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A27713CB74E99AF202AADC23200A32F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1064,9 +1395,82 @@
 			};
 			name = Release;
 		};
+		C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD819A54CEBF65D5E74AEC3273B19DAB /* GoogleMaps.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9C8B7A5C0A2BC3DC7FEE5F90BE94C77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AEE26641D8B44A7F12BE3851CFDD289 /* GooglePlaces.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E39E044A574B39AB17B777B50FFEA2FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9034B0BFCA0C479CFC0839283A0A4768 /* Pods-YuluDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F1181AC287725B4D1A302AB1A35B3BFD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58819BD23FCB0CB67D153C470C8D58BF /* SDWebImage.xcconfig */;
+			baseConfigurationReference = 23CED62080891DCC84E483FAA7A9513F /* SDWebImage.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1099,44 +1503,6 @@
 			};
 			name = Debug;
 		};
-		F6BF422E8B894C0838ED967265E1D6AF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 74A79160EE866F2D01C25D061B2E77C7 /* Pods-YuluDemo.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-YuluDemo/Pods-YuluDemo.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1145,6 +1511,33 @@
 			buildConfigurations = (
 				F1181AC287725B4D1A302AB1A35B3BFD /* Debug */,
 				5FA0246FAFCA91BEA3D1CDC330EF915D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30956B8617B8C0547ACB8D743B5E7AF4 /* Build configuration list for PBXNativeTarget "Pods-YuluDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1CFFC16252D6F2A51A157F59B901379 /* Debug */,
+				E39E044A574B39AB17B777B50FFEA2FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46921981F609C5BA3CB72EC4EA41299D /* Build configuration list for PBXAggregateTarget "GoogleMaps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AA46832D8A16AA4E4811383B204D2A4 /* Debug */,
+				C7565AEA7FCD8F66CAF546DC5AF1404F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		480B55FE3ACCAC83A30949D59053CFBD /* Build configuration list for PBXAggregateTarget "GooglePlaces" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEFD4A0FF7D85887390E5ED002003D0 /* Debug */,
+				C9C8B7A5C0A2BC3DC7FEE5F90BE94C77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1167,20 +1560,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		B4C19445312324B2FC829685DE007C84 /* Build configuration list for PBXAggregateTarget "GooglePlacePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595DD5539089161955FE3C7084B0C9B2 /* Debug */,
+				2C1C4625A069FBBE1AA822F8E0C646B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		F3FCFE09C25052E8F8CE39E3F5CC02B0 /* Build configuration list for PBXNativeTarget "Pods-YuluDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				34805920EB412D6A3D5CFDF770626F29 /* Debug */,
 				32F2678F824A3C34B36E18A227A8DE1E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F4DF24A15F690A5B285985FB0FB838A9 /* Build configuration list for PBXNativeTarget "Pods-YuluDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F6BF422E8B894C0838ED967265E1D6AF /* Debug */,
-				3EAD55A0276A8FE3476AE5A832B653D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
