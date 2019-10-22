@@ -1,6 +1,18 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## GoogleMaps
+
+Copyright 2019 Google
+
+## GooglePlacePicker
+
+Copyright 2019 Google
+
+## GooglePlaces
+
+Copyright 2019 Google
+
 ## SDWebImage
 
 Copyright (c) 2009-2017 Olivier Poitrey rs@dailymotion.com

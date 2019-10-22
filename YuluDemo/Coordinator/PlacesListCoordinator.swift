@@ -47,9 +47,7 @@ extension MyPlacesListCoordinator :MyplacesDetailViewModelCoordinatorDelegate {
         let editViewCoordinator = MyPlaceEditViewCoordinator(withNavigationController: self.navigationController, myplace: myplace)
         editViewCoordinator.start()
         
-        
     }
-    
     
 }
 
@@ -60,6 +58,13 @@ extension MyPlacesListCoordinator: AddMyplacesViewModelCoordinatorDelegate {
         addViewCoordinator.start()
         
     }
-    
+}
+
+extension MyPlacesListCoordinator: MapViewModelCoordinatorDelegate {
+    func mapViewLoad(desinationModel: AddMyPlaceViewModel) {
+        let mapViewCoordinator = MapViewCoordinator(withNavigationController: self.navigationController,desinationModel: desinationModel)
+        mapViewCoordinator.start()
+        
+    }
     
 }

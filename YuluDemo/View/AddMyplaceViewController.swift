@@ -23,6 +23,12 @@ class AddMyplaceViewController: UIViewController, StoryboardIdentifiable {
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        self.CoordinatorButton.setTitle(self.viewModel.getCoordinate(), for: .normal)
+        
+    }
+    
     class func controller(viewModel: AddMyPlaceViewModel) -> AddMyplaceViewController {
         let vc:AddMyplaceViewController = UIStoryboard (storyboard: .main).instantiateViewController()
         vc.viewModel = viewModel
@@ -50,6 +56,11 @@ class AddMyplaceViewController: UIViewController, StoryboardIdentifiable {
         self.viewModel.addNewPlace()
     }
     
+    @IBAction func LoadMapView(_ sender: Any) {
+        
+        self.viewModel.mapViewLoad()
+        
+    }
     
     func showAlert(message: String){
         

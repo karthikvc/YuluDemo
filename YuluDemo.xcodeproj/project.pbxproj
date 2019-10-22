@@ -12,6 +12,9 @@
 		181050EA235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181050E9235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift */; };
 		181050EC235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181050EB235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift */; };
 		181050EE235EED7900C91730 /* AddAPIservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181050ED235EED7900C91730 /* AddAPIservice.swift */; };
+		1820BEFA235F2CD000967AFE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820BEF9235F2CD000967AFE /* MapViewController.swift */; };
+		1820BEFC235F2D4E00967AFE /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820BEFB235F2D4E00967AFE /* MapViewCoordinator.swift */; };
+		1820BEFE235F2D9B00967AFE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820BEFD235F2D9B00967AFE /* MapViewModel.swift */; };
 		18AB5FA9235AE30300199E0F /* MyPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */; };
 		18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */; };
 		18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */; };
@@ -70,6 +73,9 @@
 		181050E9235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyPlaceViewCoordintor.swift; sourceTree = "<group>"; };
 		181050EB235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyPlaceAPIDataProvider.swift; sourceTree = "<group>"; };
 		181050ED235EED7900C91730 /* AddAPIservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAPIservice.swift; sourceTree = "<group>"; };
+		1820BEF9235F2CD000967AFE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1820BEFB235F2D4E00967AFE /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
+		1820BEFD235F2D9B00967AFE /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewModel.swift; sourceTree = "<group>"; };
 		18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplacesListDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesAPIDataProvider.swift; sourceTree = "<group>"; };
@@ -150,6 +156,7 @@
 				18AB5FC8235CE40800199E0F /* MyPlaceDetailViewModel.swift */,
 				18AB5FCE235D178800199E0F /* MyplaceEditViewModel.swift */,
 				181050E7235EB36300C91730 /* AddMyPlaceViewModel.swift */,
+				1820BEFD235F2D9B00967AFE /* MapViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -192,6 +199,7 @@
 				18AB5FC0235CBF2C00199E0F /* DetailViewCoordinator.swift */,
 				18AB5FCA235D16D600199E0F /* MyPlaceEditViewCoordinator.swift */,
 				181050E9235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift */,
+				1820BEFB235F2D4E00967AFE /* MapViewCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -265,6 +273,7 @@
 				18AB5FC6235CC05600199E0F /* MyPlaceDetailViewController.swift */,
 				18AB5FCC235D174D00199E0F /* MyPlaceEditViewController.swift */,
 				181050E5235EB30700C91730 /* AddMyplaceViewController.swift */,
+				1820BEF9235F2CD000967AFE /* MapViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -542,6 +551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18AB5FC1235CBF2C00199E0F /* DetailViewCoordinator.swift in Sources */,
+				1820BEFC235F2D4E00967AFE /* MapViewCoordinator.swift in Sources */,
 				18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */,
 				18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */,
 				18AB5FCD235D174D00199E0F /* MyPlaceEditViewController.swift in Sources */,
@@ -554,6 +564,7 @@
 				18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */,
 				18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */,
 				18AB5FD1235D2CD800199E0F /* EditApiService.swift in Sources */,
+				1820BEFA235F2CD000967AFE /* MapViewController.swift in Sources */,
 				18AB5FBD235C9FD200199E0F /* UIViewControllerExten.swift in Sources */,
 				18AB5FCB235D16D600199E0F /* MyPlaceEditViewCoordinator.swift in Sources */,
 				18AB5FA9235AE30300199E0F /* MyPlacesViewModel.swift in Sources */,
@@ -562,6 +573,7 @@
 				18AB5FC9235CE40800199E0F /* MyPlaceDetailViewModel.swift in Sources */,
 				181050E8235EB36300C91730 /* AddMyPlaceViewModel.swift in Sources */,
 				18B690EC235A2B0300738093 /* ViewController.swift in Sources */,
+				1820BEFE235F2D9B00967AFE /* MapViewModel.swift in Sources */,
 				18AB5FB6235C441B00199E0F /* MyPlaceAPIDataProvider.swift in Sources */,
 				18AB5FBF235CA19F00199E0F /* UIStoryBoardExten.swift in Sources */,
 				181050EE235EED7900C91730 /* AddAPIservice.swift in Sources */,

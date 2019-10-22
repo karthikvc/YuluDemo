@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -25,6 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         appCoordinator = AppCoordinator(withNavigationController: navigationController)
         appCoordinator.start()
         window?.makeKeyAndVisible()
+        
+        //AIzaSyD4TuwHbuKsLwh5pmBuiExsjZKQCsWV4HU
+        GMSServices.provideAPIKey("AIzaSyD4TuwHbuKsLwh5pmBuiExsjZKQCsWV4HU")
+        //GMSPlacesClient.provideAPIKey("AIzaSyC9oc5DrUOjbvhMaNvUH58CkxL3x4lNsKA")
         
         return true
     }

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol AddMyplacesViewModelCoordinatorDelegate: class {
     
@@ -29,7 +30,11 @@ public class AddMyPlaceViewModel {
 
 extension AddMyPlaceViewModel {
 
-    
+    public func getCoordinate()-> String {
+        let longitude = String(format:"%.2f", self.myPlace.longitude)
+        let latitude = String(format:"%.2f", self.myPlace.latitude)
+        return latitude + "," + longitude
+    }
     
     public func updateTitle(title: String){
         
@@ -40,9 +45,21 @@ extension AddMyPlaceViewModel {
         self.myPlace.description = description
     }
     
-    public func updateCoordiante(longtitude: Double, latitue: Double) {
-        
+    public func addCoordiante(longtitude: Double, latitue: Double) {
+        self.myPlace.latitude = latitue
+        self.myPlace.longitude = longtitude
     }
+    
+    public func mapViewLoad(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appcoordinator  = appDelegate.appCoordinator
+        let coordinateDelegate = appcoordinator?.coordinators[0] as? MapViewModelCoordinatorDelegate
+        coordinateDelegate!.mapViewLoad(desinationModel: self)
+    
+    }
+    
+    
     
     func addNewPlace(){
         

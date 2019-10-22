@@ -66,7 +66,7 @@ extension MyPlacesViewController : UITableViewDelegate, UITableViewDataSource {
         
         let myplace = self.viewModel.myPlacesListItem(at: indexPath)
         cell?.pTitle.text = myplace?.title
-        cell?.PDescription.text = "this nice place"
+        cell?.PDescription.text = myplace?.description
         //cell.textLabel?.text = "My Places"
         return cell!
     }
