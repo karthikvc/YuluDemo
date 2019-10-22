@@ -8,6 +8,9 @@ target 'YuluDemo' do
   # Pods for YuluDemo
   
    pod 'SDWebImage', '~> 4.0'
+   pod 'GooglePlacePicker'
+   pod 'GoogleMaps'
+   pod 'GooglePlaces'
 
   target 'YuluDemoTests' do
     inherit! :search_paths
