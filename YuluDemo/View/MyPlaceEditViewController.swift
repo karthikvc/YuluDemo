@@ -52,6 +52,7 @@ class MyPlaceEditViewController: UIViewController,StoryboardIdentifiable {
         
         //self.showAlert()
         
+        self.viewModel.mapViewLoad()
         
     }
     
@@ -61,20 +62,20 @@ class MyPlaceEditViewController: UIViewController,StoryboardIdentifiable {
         self.viewModel.updateMyPlace()
     }
     
-    func showAlert(message: String){
-        
-        let alert = UIAlertController(title: "Result", message: message, preferredStyle: .alert)
-        
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
-            
-            if message != "Fail" {
-                self.navigationController?.popViewController(animated: true)
-            }
-            
-        }))
-        
-        self.present(alert, animated: true, completion: nil)
-        
-    }
+//    func showAlert(message: String){
+//
+//        let alert = UIAlertController(title: "Result", message: message, preferredStyle: .alert)
+//
+//        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+//
+//            if message != "Fail" {
+//                self.navigationController?.popViewController(animated: true)
+//            }
+//
+//        }))
+//
+//        self.present(alert, animated: true, completion: nil)
+//
+//    }
     
 }

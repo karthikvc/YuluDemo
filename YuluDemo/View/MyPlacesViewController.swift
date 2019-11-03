@@ -86,4 +86,8 @@ extension MyPlacesViewController : UITableViewDelegate, UITableViewDataSource {
         
     }
     
+    @IBAction func mapViewLoad(_ sender: Any){
+        
+        self.viewModel.mapViewLoad()
+    }
 }

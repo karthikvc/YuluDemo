@@ -21,7 +21,9 @@ class MyPlaceDetailViewCoordinator:Coordinator {
 
     func start() {
         let vm = MyPlaceDetailViewModel(myplace: self.myplace)
+        vm.setDataProvider(dataProvider: MyPlacesAPIDataProvider())
         let viewController = MyPlaceDetailViewController.controller(viewModel: vm)
+        
         self.navigationController .pushViewController(viewController, animated: true)
     }
 }

@@ -12,8 +12,8 @@ import UIKit
 class MapViewCoordinator:Coordinator {
     
     let navigationController:UINavigationController!
-    let desinationViewmodel: AddMyPlaceViewModel
-    init(withNavigationController navigationController:UINavigationController, desinationModel:AddMyPlaceViewModel) {
+    let desinationViewmodel: MapViewModelProtocal
+    init(withNavigationController navigationController:UINavigationController, desinationModel: MapViewModelProtocal) {
         self.navigationController = navigationController
         self.desinationViewmodel = desinationModel
     }

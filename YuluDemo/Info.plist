@@ -43,5 +43,9 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>testing</string>
+    <key>NSCameraUsageDescription</key>
+    <string>This app will use camera</string>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>You can select photo</string>
 </dict>
 </plist>

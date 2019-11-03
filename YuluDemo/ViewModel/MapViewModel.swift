@@ -10,13 +10,13 @@ import Foundation
 
 protocol MapViewModelCoordinatorDelegate: class {
     
-    func mapViewLoad(desinationModel: AddMyPlaceViewModel)
+    func mapViewLoad(desinationModel: MapViewModelProtocal)
 }
 
 
 public class MapViewModel {
-    var desinationViewModel : AddMyPlaceViewModel!
-    init(viewModel: AddMyPlaceViewModel) {
+    var desinationViewModel : MapViewModelProtocal!
+    init(viewModel: MapViewModelProtocal) {
         
         self.desinationViewModel = viewModel
     }
@@ -24,6 +24,30 @@ public class MapViewModel {
     
     func addLocation(latitude:Double, longitude: Double){
         self.desinationViewModel.addCoordiante(longtitude: longitude, latitue: latitude)
+    }
+    
+    func getlatitute()-> Double {
+        
+        return self.desinationViewModel.getlatitute()
+    }
+    
+    func getlongtitute()-> Double {
+        
+        return self.desinationViewModel.getlongtite()
+    }
+    
+    func numberofLocation() -> Int {
+        
+        return self.desinationViewModel.getNumberOfLocation()
+    }
+    
+    func getPlaceItem(index: Int) -> MyplacesListItem{
+        
+        return self.desinationViewModel.getPlaceItem(index: index)
+    }
+    
+    func isEditMode()-> Bool {
+        return self.desinationViewModel.isEditMode()
     }
     
 }

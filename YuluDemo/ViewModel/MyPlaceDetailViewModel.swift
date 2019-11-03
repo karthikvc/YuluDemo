@@ -12,16 +12,22 @@ import UIKit
 protocol MyplacesDetailViewModelCoordinatorDelegate: class {
     
     func MyplaceEditViewModel(myplace: MyplacesListItem)
+    func MyplaceImageUploadviewModel(myplaceDetailviewModel: MyPlaceDetailViewModel)
 }
 
 public class MyPlaceDetailViewModel {
     
     private var myPlace: MyplacesListItem?
-    
+    private var dataProvider:MyPlacesListDataProvider?
+    public var reloadView:(()->())?
     init(myplace: MyplacesListItem) {
         self.myPlace = myplace
       
-        NotificationCenter.default.addObserver(self, selector: #selector(self.batteryLevelChanged), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updatePlaceItem), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
+    }
+    
+    func setDataProvider(dataProvider:MyPlacesListDataProvider) {
+        self.dataProvider = dataProvider
     }
     
     deinit {
@@ -31,6 +37,10 @@ public class MyPlaceDetailViewModel {
 }
 
 extension MyPlaceDetailViewModel {
+    
+    public func getPlaceItem()-> MyplacesListItem {
+        return myPlace!
+    }
     
     public func getTitle()-> String {
         return self.myPlace!.title
@@ -71,14 +81,44 @@ extension MyPlaceDetailViewModel {
         coordinateDelegate!.MyplaceEditViewModel(myplace: myPlace!)
     }
     
+    func loadMyplaceImageuploadViewcontroller() {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appcoordinator  = appDelegate.appCoordinator
+        let coordinateDelegate = appcoordinator?.coordinators[0] as? MyplacesDetailViewModelCoordinatorDelegate
+        
+        coordinateDelegate?.MyplaceImageUploadviewModel(myplaceDetailviewModel: self)
+    }
     
-    @objc private func batteryLevelChanged(notification: NSNotification){
+    @objc private func updatePlaceItem(notification: NSNotification){
         //do stuff using the userInfo property of the notification object
         print("updating")
         
         if let place = notification.object  {
             // do something with your image
             myPlace = place as? MyplacesListItemModel
+        }
+        else {
+            
+            self.fetchMyPlaceFor(self.myPlace!.placeId, handler: { (fetchplace, error) in
+                
+                self.myPlace = fetchplace!
+                self.reloadView?()
+            })
+            
+        }
+        
+    }
+}
+
+
+extension MyPlaceDetailViewModel{
+    
+    private func fetchMyPlaceFor(_ placeId: String, handler:@escaping (MyplacesListItem?, Error?)->()) {
+        
+        self.dataProvider?.fetchMyPlaceFor(placeId) {(myplace ,error) in
+            
+            handler(myplace,error)
         }
         
     }

@@ -7,14 +7,14 @@
 //
 
 import Foundation
-
+import UIKit
 
 public class MyPlaceEditViewModel {
     private let dataProvider:MyplaceUpdateAPIDataProvider
-    private var myPlace: MyplacesListItem?
+    private var myPlace: MyplacesListItemModel?
     public var showAlert:((String?)->())?
     
-    init(myplace: MyplacesListItem, dataProvider: MyplaceUpdateAPIDataProvider) {
+    init(myplace: MyplacesListItemModel, dataProvider: MyplaceUpdateAPIDataProvider) {
         self.myPlace = myplace
         self.dataProvider = dataProvider
     }
@@ -47,10 +47,6 @@ extension MyPlaceEditViewModel {
         self.myPlace?.description = description
     }
     
-    public func updateCoordiante(longtitude: Double, latitue: Double) {
-        
-    }
-    
     public func updateMyPlace() {
         self.updateMyplaceBy(myPlace!) { (result, error ) in
             
@@ -61,6 +57,37 @@ extension MyPlaceEditViewModel {
             }
         }
     }
+    
+    public func mapViewLoad(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appcoordinator  = appDelegate.appCoordinator
+        let coordinateDelegate = appcoordinator?.coordinators[0] as? MapViewModelCoordinatorDelegate
+        coordinateDelegate!.mapViewLoad(desinationModel: self)
+        
+    }
+}
+
+extension MyPlaceEditViewModel: MapViewModelProtocal {
+    
+    func addCoordiante(longtitude: Double, latitue: Double) {
+        self.myPlace!.latitude = latitue
+        self.myPlace!.longitude = longtitude
+    }
+    
+    func getlatitute() -> Double {
+        return self.myPlace!.latitude
+    }
+    
+    func getlongtite() -> Double {
+        return self.myPlace!.longitude
+    }
+    
+    func isEditMode() -> Bool {
+        return true
+    }
+    
+   
 }
 
 extension MyPlaceEditViewModel {

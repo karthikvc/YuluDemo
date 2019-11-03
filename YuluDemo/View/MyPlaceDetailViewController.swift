@@ -22,6 +22,7 @@ class MyPlaceDetailViewController: UIViewController,StoryboardIdentifiable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.setUpViewModel()
         // Do any additional setup after loading the view.
     }
     
@@ -34,9 +35,24 @@ class MyPlaceDetailViewController: UIViewController,StoryboardIdentifiable {
     
     override func viewWillAppear(_ animated: Bool) {
         
+        self.refreshView()
+       
+    }
+    
+    private func setUpViewModel() {
+        
+        viewModel.reloadView = { [weak self] in
+            self?.refreshView()
+            
+        }
+    }
+    
+    func refreshView() {
         self.placetitle.text = self.viewModel.getTitle()
         self.placedescription.text = self.viewModel.getDescription()
         self.placeCoordinate.text = self.viewModel.getCoordinate()
+        
+        self.title = self.placetitle.text
         
         let imageurl = self.viewModel.getImageUrl()
         print(imageurl as Any)
@@ -49,5 +65,9 @@ class MyPlaceDetailViewController: UIViewController,StoryboardIdentifiable {
         self.viewModel.loadMyPlaceEditViewController()
     }
     
+    @IBAction func ImageuploadButtonAction(_ sender: Any) {
+        print("button Presso")
+        self.viewModel.loadMyplaceImageuploadViewcontroller()
+    }
 }
 

@@ -13,10 +13,10 @@ import UIKit
 class MyPlaceEditViewCoordinator:Coordinator {
     
     let navigationController:UINavigationController!
-    let myplace : MyplacesListItem!
+    let myplace : MyplacesListItemModel!
     init(withNavigationController navigationController:UINavigationController, myplace: MyplacesListItem) {
         self.navigationController = navigationController
-        self.myplace = myplace
+        self.myplace = myplace as? MyplacesListItemModel
     }
     
     

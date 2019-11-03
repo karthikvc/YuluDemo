@@ -16,6 +16,7 @@ class MapViewController: UIViewController,StoryboardIdentifiable {
     let locationManager = CLLocationManager()
     @IBOutlet var mapView:GMSMapView!
     private let marker = GMSMarker()
+    var location: CLLocationCoordinate2D?
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -26,7 +27,9 @@ class MapViewController: UIViewController,StoryboardIdentifiable {
         self.locationManager.startUpdatingLocation()
         
         // Do any additional setup after loading the view.
-        self.mapView.delegate = self
+        if self.viewModel.isEditMode() {
+          self.mapView.delegate = self
+        }
         //let camera = GMSCameraPosition.camera(withLatitude: -33.86, longitude: 151.20, zoom: 15.0)
         //mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         //view = mapView
@@ -38,6 +41,41 @@ class MapViewController: UIViewController,StoryboardIdentifiable {
 //        marker.snippet = "Australia"
 //        marker.map = mapView
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        
+        
+        if self.viewModel.isEditMode() == false {
+            let numberofLocation = self.viewModel.numberofLocation()
+            for i in 0...numberofLocation-1 {
+                let item = self.viewModel.getPlaceItem(index: i)
+                let lat =  item.latitude   //viewModel.getlatitute()
+                let long =  item.longitude //viewModel.getlongtitute()
+                
+                self.location = CLLocationCoordinate2D(latitude: lat, longitude: long)
+                
+                if let location = self.location {
+                    let marker = GMSMarker()
+                    marker.position = location //CLLocationCoordinate2D(latitude: -33.86, longitude: 151.20)
+                    marker.title = item.title
+                    
+                    marker.map = mapView
+                    if i == 0 {
+                        mapView.camera = GMSCameraPosition.camera(withTarget: location, zoom:2.8)
+                    }
+                }
+            }
+        } else {
+            
+            let lat =  viewModel.getlatitute()
+            let long =  viewModel.getlongtitute()
+            self.location = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            marker.position = location!
+            marker.map = mapView
+            mapView.camera = GMSCameraPosition.camera(withTarget: location!, zoom:2.8)
+    }
     }
     
     class func controller(viewModel: MapViewModel) -> MapViewController {

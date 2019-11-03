@@ -38,5 +38,4 @@ class AddMyplaceAPIDataProvider: AddMyPlaceDataProvider {
         
     }
     
-
 }

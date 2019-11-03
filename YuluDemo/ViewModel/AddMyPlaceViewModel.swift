@@ -16,7 +16,7 @@ protocol AddMyplacesViewModelCoordinatorDelegate: class {
 
 
 
-public class AddMyPlaceViewModel {
+public class AddMyPlaceViewModel: MapViewModelProtocal {
     private let dataProvider:AddMyplaceAPIDataProvider
     var myPlace = MyplacesListItemModel()
     
@@ -45,9 +45,21 @@ extension AddMyPlaceViewModel {
         self.myPlace.description = description
     }
     
+    func isEditMode() -> Bool {
+        return true
+    }
+    
     public func addCoordiante(longtitude: Double, latitue: Double) {
         self.myPlace.latitude = latitue
         self.myPlace.longitude = longtitude
+    }
+    
+    public func getlatitute() -> Double {
+        return myPlace.latitude
+    }
+    
+    public func getlongtite() -> Double {
+        return myPlace.longitude
     }
     
     public func mapViewLoad(){

@@ -40,6 +40,11 @@ public protocol AddMyPlaceDataProvider {
     func addMyPlace(_ myplace: MyplacesListItem, completionHandler: @escaping(String?,Error?)->())
 }
 
+public protocol UploadImageDataProvider {
+    
+    func uploadImage(_ myplace: MyplacesListItem, imageFile: String, completionHandler: @escaping (String?, Error?) -> ())
+}
+
 
 public struct MyPlacesListModel:MyPlacesList {
     public var result: [MyplacesListItem]

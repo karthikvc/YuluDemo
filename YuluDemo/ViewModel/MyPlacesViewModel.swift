@@ -28,7 +28,7 @@ public class MyPlacesViewModel {
     
     public init(dataProvider:MyPlacesListDataProvider) {
        self.dataProvider = dataProvider
-        NotificationCenter.default.addObserver(self, selector: #selector(self.batteryLevelChanged), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(self.updatePlaces), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
     }
     
     func setCoordinator(coordinater: MyplacesListViewModelCoordinatorDelegate){
@@ -39,34 +39,72 @@ public class MyPlacesViewModel {
 extension MyPlacesViewModel {
     
     public func loadMyPlaces() {
+        // Load from DB
         
-        self.fetchMyPlaces("test") {[weak self](error) in
-            guard let strongSelf = self else {return}
+       let placeList =  CoreDataManager.FetchData()
+        
+        if placeList.count > 0 {
             
-            strongSelf.reloadList?()
+            self.myPlaces = placeList
+            self.reloadList?()
+        }
+        
+        DispatchQueue.global().async {
             
-            DispatchQueue.global().async {
+            self.fetchMyPlaces("test") {[weak self](error) in
+                guard let strongSelf = self else {return}
                 
+                strongSelf.reloadList?()
                 
-                for placeIndex in 0...self!.myPlaces.count-1 {
+                DispatchQueue.global().async {
                     
-                    strongSelf.fetchMyPlaceFor(( (self?.myPlaces[placeIndex].placeId)!), handler: {[weak self,placeIndex] (fetchplace, error) in
-                       
-                       self?.myPlaces[placeIndex] = fetchplace!
-                    })
+                    if (strongSelf.myPlaces.count > 0) {
+                        
+                        for placeIndex in 0...self!.myPlaces.count-1 {
+                            
+                            strongSelf.fetchMyPlaceFor(( (self?.myPlaces[placeIndex].placeId)!), handler: {[weak self,placeIndex] (fetchplace, error) in
+                                
+                                if let place = fetchplace {
+                                    self?.myPlaces[placeIndex] = place
+                                }
+                            })
+                        }
+                    }
                     
                 }
                 
+                if placeList.count <= 0 {
+                    CoreDataManager.SaveData(places: self!.myPlaces)
+                }
+                else{
+                    
+                    for place in self!.myPlaces {
+                        
+                        if  CoreDataManager.fetchPlaceBy(withId: place.placeId) == false {
+                            
+                            CoreDataManager.saveItem(place: place)
+                            
+                        }
+                    }
+                }
             }
-            
         }
     }
     
-    @objc private func batteryLevelChanged(notification: NSNotification){
+    @objc private func updatePlaces(notification: NSNotification){
         //do stuff using the userInfo property of the notification object
         print("updating")
         
         self.loadMyPlaces()
+        
+    }
+    
+    public func mapViewLoad(){
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appcoordinator  = appDelegate.appCoordinator
+        let coordinateDelegate = appcoordinator?.coordinators[0] as? MapViewModelCoordinatorDelegate
+        coordinateDelegate!.mapViewLoad(desinationModel: self)
         
     }
     
@@ -126,4 +164,20 @@ extension MyPlacesViewModel{
         }
         
     }
+    
+    
+}
+
+extension MyPlacesViewModel: MapViewModelProtocal {
+    
+    
+    func getNumberOfLocation()-> Int {
+        return myPlaces.count
+    }
+    
+    func getPlaceItem(index: Int) -> MyplacesListItem {
+        
+        return self.myPlaces[index]
+    }
+    
 }

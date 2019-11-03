@@ -33,8 +33,12 @@ extension MyPlacesListCoordinator :MyplacesListViewModelCoordinatorDelegate {
     
     func MyplacesViewModelDidSelect(myplace: MyplacesListItem) {
    
-        let detailViewCoordinator = MyPlaceDetailViewCoordinator(withNavigationController: self.navigationController, myplace: myplace)
+        let detailViewCoordinator = MyPlaceDetailViewCoordinator(withNavigationController:
+            self.navigationController, myplace: myplace)
+        
+        
           detailViewCoordinator.start()
+        
     }
     
 }
@@ -49,6 +53,12 @@ extension MyPlacesListCoordinator :MyplacesDetailViewModelCoordinatorDelegate {
         
     }
     
+    func MyplaceImageUploadviewModel(myplaceDetailviewModel: MyPlaceDetailViewModel){
+       let imageuploadCoordinator = ImageuploadCoordinate(withNavigationController: self.navigationController, desinationModel: myplaceDetailviewModel)
+        
+        imageuploadCoordinator.start()
+    }
+    
 }
 
 extension MyPlacesListCoordinator: AddMyplacesViewModelCoordinatorDelegate {
@@ -61,7 +71,8 @@ extension MyPlacesListCoordinator: AddMyplacesViewModelCoordinatorDelegate {
 }
 
 extension MyPlacesListCoordinator: MapViewModelCoordinatorDelegate {
-    func mapViewLoad(desinationModel: AddMyPlaceViewModel) {
+    
+    func mapViewLoad(desinationModel: MapViewModelProtocal) {
         let mapViewCoordinator = MapViewCoordinator(withNavigationController: self.navigationController,desinationModel: desinationModel)
         mapViewCoordinator.start()
         
