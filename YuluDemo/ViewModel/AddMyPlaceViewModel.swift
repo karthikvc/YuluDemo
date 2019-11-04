@@ -15,20 +15,41 @@ protocol AddMyplacesViewModelCoordinatorDelegate: class {
 }
 
 
-
 public class AddMyPlaceViewModel: MapViewModelProtocal {
     private let dataProvider:AddMyplaceAPIDataProvider
+    private var createPlaceDataProvider: CreatePlaceWithImageAPIDataProvider? = CreatePlaceWithImageAPIDataProvider()
     var myPlace = MyplacesListItemModel()
-    
+    var imageFile: String?
     public var showAlert:((String?)->())?
     
     init(dataProvider: AddMyplaceAPIDataProvider) {
        self.dataProvider = dataProvider
     }
     
+    func setCreatePlaceApiDataProvider(dataProvider: CreatePlaceWithImageAPIDataProvider) {
+        self.createPlaceDataProvider = dataProvider
+    }
+    
 }
 
-extension AddMyPlaceViewModel {
+extension AddMyPlaceViewModel:ImageLoadModelViewProtocal {
+    var ImageFile: String? {
+        get {
+            return imageFile
+        }
+        set {
+            imageFile = newValue
+        }
+    }
+    
+    var IsEditMode: Bool {
+        return false
+    }
+    
+    func getPlaceItem() -> MyplacesListItem {
+        return myPlace
+    }
+    
 
     public func getCoordinate()-> String {
         let longitude = String(format:"%.2f", self.myPlace.longitude)
@@ -71,9 +92,30 @@ extension AddMyPlaceViewModel {
     
     }
     
+    func loadMyplaceImageuploadViewcontroller() {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let appcoordinator  = appDelegate.appCoordinator
+        let coordinateDelegate = appcoordinator?.coordinators[0] as? MyplacesDetailViewModelCoordinatorDelegate
+        
+        coordinateDelegate?.MyplaceImageUploadviewModel(myplaceDetailviewModel: self)
+    }
+    
     
     
     func addNewPlace(){
+        
+        if self.ImageFile != nil {
+            
+            self.createPlaceWithImage()
+        }
+        else {
+            self.createPlace()
+        }
+        
+    }
+    
+    func createPlace(){
         
         self.addMyplaceBy(myPlace) { (result, error) in
             
@@ -83,6 +125,18 @@ extension AddMyPlaceViewModel {
             }
         }
         
+    }
+    
+    func createPlaceWithImage(){
+        
+        self.createPlaceBy(WithImage: myPlace, image: ImageFile!) { (result, error) in
+            
+            self.showAlert?(result)
+            if result == "Success" {
+                NotificationCenter.default.post(name: NSNotification.Name("UpdatePlace"), object: nil, userInfo: nil)
+            }
+            
+        }
     }
 }
 
@@ -95,5 +149,10 @@ extension AddMyPlaceViewModel {
             handler(result,error)
         }
     }
+    
+    private func createPlaceBy(WithImage place: MyplacesListItem, image: String, handler:@escaping (String?, Error?)->()) {
+        self.createPlaceDataProvider?.uploadImage(place, imageFile: image, completionHandler: handler)
+    }
+    
     
 }

@@ -26,7 +26,7 @@ extension ImageUploadAPIResource {
             "content-type": "multipart/form-data; boundary =----WebKitFormBoundary7MA4YWxkTrZu0gW"]
         }
     
-    var parameters: [String: String] {
+    var parameters: Parameters {
        return [
     
         //[

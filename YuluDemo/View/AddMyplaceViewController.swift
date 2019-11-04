@@ -53,12 +53,19 @@ class AddMyplaceViewController: UIViewController, StoryboardIdentifiable {
     @IBAction func SaveMyNewplace(_ sender: Any) {
         
        self.viewModel.updateTitle(title: titleTextField.text!)
+        self.viewModel.updateDescritption(description: subTitleTextField.text)
         self.viewModel.addNewPlace()
     }
     
     @IBAction func LoadMapView(_ sender: Any) {
         
         self.viewModel.mapViewLoad()
+        
+    }
+    
+    @IBAction func LoadImageView(_ sender: Any) {
+        
+        self.viewModel.loadMyplaceImageuploadViewcontroller()
         
     }
     

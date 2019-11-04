@@ -13,6 +13,8 @@
 		181050EA235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181050E9235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift */; };
 		181050EC235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181050EB235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift */; };
 		181050EE235EED7900C91730 /* AddAPIservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181050ED235EED7900C91730 /* AddAPIservice.swift */; };
+		1812A01A23701D1300A6DBB2 /* testhouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1812A01923701D1300A6DBB2 /* testhouse.jpg */; };
+		1812A01B23701D1300A6DBB2 /* testhouse.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1812A01923701D1300A6DBB2 /* testhouse.jpg */; };
 		1820BEFA235F2CD000967AFE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820BEF9235F2CD000967AFE /* MapViewController.swift */; };
 		1820BEFC235F2D4E00967AFE /* MapViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820BEFB235F2D4E00967AFE /* MapViewCoordinator.swift */; };
 		1820BEFE235F2D9B00967AFE /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1820BEFD235F2D9B00967AFE /* MapViewModel.swift */; };
@@ -21,6 +23,9 @@
 		187C2F7223632B630036D5C3 /* ImageuploadCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C2F7123632B630036D5C3 /* ImageuploadCoordinator.swift */; };
 		187C2F742363EB7F0036D5C3 /* ImageuploadDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C2F732363EB7F0036D5C3 /* ImageuploadDataProvider.swift */; };
 		187C2F762363F2890036D5C3 /* ImageUploadAPIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 187C2F752363F2890036D5C3 /* ImageUploadAPIResource.swift */; };
+		188EC32B236F9853003B02B6 /* CreatePlaceWithImageAPIResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC32A236F9853003B02B6 /* CreatePlaceWithImageAPIResource.swift */; };
+		188EC32D236F9CF6003B02B6 /* CreatePlaceWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC32C236F9CF6003B02B6 /* CreatePlaceWithImage.swift */; };
+		188EC32F236FBFF8003B02B6 /* ImageLoadProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188EC32E236FBFF8003B02B6 /* ImageLoadProtocal.swift */; };
 		18AB5FA9235AE30300199E0F /* MyPlacesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */; };
 		18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */; };
 		18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */; };
@@ -83,6 +88,7 @@
 		181050E9235EB4C000C91730 /* AddMyPlaceViewCoordintor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyPlaceViewCoordintor.swift; sourceTree = "<group>"; };
 		181050EB235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMyPlaceAPIDataProvider.swift; sourceTree = "<group>"; };
 		181050ED235EED7900C91730 /* AddAPIservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAPIservice.swift; sourceTree = "<group>"; };
+		1812A01923701D1300A6DBB2 /* testhouse.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testhouse.jpg; sourceTree = "<group>"; };
 		1820BEF9235F2CD000967AFE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		1820BEFB235F2D4E00967AFE /* MapViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewCoordinator.swift; sourceTree = "<group>"; };
 		1820BEFD235F2D9B00967AFE /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
@@ -91,6 +97,9 @@
 		187C2F7123632B630036D5C3 /* ImageuploadCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageuploadCoordinator.swift; sourceTree = "<group>"; };
 		187C2F732363EB7F0036D5C3 /* ImageuploadDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageuploadDataProvider.swift; sourceTree = "<group>"; };
 		187C2F752363F2890036D5C3 /* ImageUploadAPIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadAPIResource.swift; sourceTree = "<group>"; };
+		188EC32A236F9853003B02B6 /* CreatePlaceWithImageAPIResource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaceWithImageAPIResource.swift; sourceTree = "<group>"; };
+		188EC32C236F9CF6003B02B6 /* CreatePlaceWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlaceWithImage.swift; sourceTree = "<group>"; };
+		188EC32E236FBFF8003B02B6 /* ImageLoadProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoadProtocal.swift; sourceTree = "<group>"; };
 		18AB5FA8235AE30300199E0F /* MyPlacesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesViewModel.swift; sourceTree = "<group>"; };
 		18AB5FAB235AEEF900199E0F /* MyplacesListDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyplacesListDataProvider.swift; sourceTree = "<group>"; };
 		18AB5FAD235AF97800199E0F /* MyPlacesAPIDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesAPIDataProvider.swift; sourceTree = "<group>"; };
@@ -176,6 +185,7 @@
 				181050E7235EB36300C91730 /* AddMyPlaceViewModel.swift */,
 				1820BEFD235F2D9B00967AFE /* MapViewModel.swift */,
 				180A4698236BF8DE002B470A /* MapViewModelProtocal.swift */,
+				188EC32E236FBFF8003B02B6 /* ImageLoadProtocal.swift */,
 				187C2F6F2363215F0036D5C3 /* ImageUploadViewModel.swift */,
 			);
 			path = ViewModel;
@@ -190,6 +200,7 @@
 				18AB5FD2235D89D800199E0F /* MyplaceEditAPIDataProvider.swift */,
 				181050EB235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift */,
 				187C2F732363EB7F0036D5C3 /* ImageuploadDataProvider.swift */,
+				188EC32C236F9CF6003B02B6 /* CreatePlaceWithImage.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -201,6 +212,7 @@
 				18AB5FD0235D2CD800199E0F /* EditApiService.swift */,
 				181050ED235EED7900C91730 /* AddAPIservice.swift */,
 				187C2F752363F2890036D5C3 /* ImageUploadAPIResource.swift */,
+				188EC32A236F9853003B02B6 /* CreatePlaceWithImageAPIResource.swift */,
 				18F35E082369B0D600CE71CB /* CoreDataManager.swift */,
 			);
 			path = Service;
@@ -267,6 +279,7 @@
 				18B690F5235A2B0400738093 /* LaunchScreen.storyboard */,
 				18B690ED235A2B0300738093 /* Main.storyboard */,
 				18B690F8235A2B0400738093 /* Info.plist */,
+				1812A01923701D1300A6DBB2 /* testhouse.jpg */,
 				18B690F0235A2B0300738093 /* YuluDemo.xcdatamodeld */,
 			);
 			path = YuluDemo;
@@ -447,6 +460,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1812A01A23701D1300A6DBB2 /* testhouse.jpg in Resources */,
 				18B690F7235A2B0400738093 /* LaunchScreen.storyboard in Resources */,
 				18B690F4235A2B0400738093 /* Assets.xcassets in Resources */,
 				18B690EF235A2B0300738093 /* Main.storyboard in Resources */,
@@ -457,6 +471,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1812A01B23701D1300A6DBB2 /* testhouse.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,14 +595,17 @@
 				18F35E052368D20200CE71CB /* Media.swift in Sources */,
 				18AB5FC1235CBF2C00199E0F /* DetailViewCoordinator.swift in Sources */,
 				1820BEFC235F2D4E00967AFE /* MapViewCoordinator.swift in Sources */,
+				188EC32B236F9853003B02B6 /* CreatePlaceWithImageAPIResource.swift in Sources */,
 				18AB5FB4235BA7C400199E0F /* MyPlacesJson.swift in Sources */,
 				18AB5FAE235AF97800199E0F /* MyPlacesAPIDataProvider.swift in Sources */,
 				18AB5FCD235D174D00199E0F /* MyPlaceEditViewController.swift in Sources */,
 				18AB5FBB235C9D9500199E0F /* PlacesListCoordinator.swift in Sources */,
 				18AB5FB9235C9CC700199E0F /* AppCoordinator.swift in Sources */,
+				188EC32D236F9CF6003B02B6 /* CreatePlaceWithImage.swift in Sources */,
 				18AB5FCF235D178800199E0F /* MyplaceEditViewModel.swift in Sources */,
 				18AB5FC7235CC05600199E0F /* MyPlaceDetailViewController.swift in Sources */,
 				18AB5FAC235AEEF900199E0F /* MyplacesListDataProvider.swift in Sources */,
+				188EC32F236FBFF8003B02B6 /* ImageLoadProtocal.swift in Sources */,
 				181050EC235ED8B500C91730 /* AddMyPlaceAPIDataProvider.swift in Sources */,
 				18B69121235A4E4400738093 /* UIViewExtension.swift in Sources */,
 				18B6911C235A2D5600738093 /* MyPlacesViewController.swift in Sources */,

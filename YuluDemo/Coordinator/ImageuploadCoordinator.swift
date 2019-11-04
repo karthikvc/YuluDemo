@@ -12,8 +12,8 @@ import UIKit
 class ImageuploadCoordinate: Coordinator{
     
     let navigationController:UINavigationController!
-    let desinationViewmodel: MyPlaceDetailViewModel
-    init(withNavigationController navigationController:UINavigationController, desinationModel:MyPlaceDetailViewModel) {
+    let desinationViewmodel: ImageLoadModelViewProtocal
+    init(withNavigationController navigationController:UINavigationController, desinationModel:ImageLoadModelViewProtocal) {
         self.navigationController = navigationController
         self.desinationViewmodel = desinationModel
     }

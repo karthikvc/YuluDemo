@@ -53,7 +53,7 @@ extension MyPlacesListCoordinator :MyplacesDetailViewModelCoordinatorDelegate {
         
     }
     
-    func MyplaceImageUploadviewModel(myplaceDetailviewModel: MyPlaceDetailViewModel){
+    func MyplaceImageUploadviewModel(myplaceDetailviewModel: ImageLoadModelViewProtocal){
        let imageuploadCoordinator = ImageuploadCoordinate(withNavigationController: self.navigationController, desinationModel: myplaceDetailviewModel)
         
         imageuploadCoordinator.start()

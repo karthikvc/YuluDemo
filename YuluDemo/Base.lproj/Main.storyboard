@@ -444,7 +444,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="updateCoordinateAction:" destination="Ohe-yh-GMj" eventType="touchUpInside" id="DHC-ZJ-lYo"/>
+                                    <action selector="LoadImageView:" destination="jkb-gg-56f" eventType="touchUpInside" id="JAz-W8-mLN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7y-ar-P2z">

@@ -12,18 +12,33 @@ import UIKit
 protocol MyplacesDetailViewModelCoordinatorDelegate: class {
     
     func MyplaceEditViewModel(myplace: MyplacesListItem)
-    func MyplaceImageUploadviewModel(myplaceDetailviewModel: MyPlaceDetailViewModel)
+    func MyplaceImageUploadviewModel(myplaceDetailviewModel: ImageLoadModelViewProtocal)
 }
 
-public class MyPlaceDetailViewModel {
+public class MyPlaceDetailViewModel: ImageLoadModelViewProtocal{
+    
     
     private var myPlace: MyplacesListItem?
     private var dataProvider:MyPlacesListDataProvider?
     public var reloadView:(()->())?
+    private var imageFile: String?
     init(myplace: MyplacesListItem) {
         self.myPlace = myplace
       
         NotificationCenter.default.addObserver(self, selector: #selector(self.updatePlaceItem), name:NSNotification.Name(rawValue: "UpdatePlace"), object: nil)
+    }
+    
+    var ImageFile: String? {
+        get {
+            return imageFile!
+        }
+        set {
+            imageFile = newValue
+        }
+    }
+    
+    var IsEditMode: Bool {
+        return true
     }
     
     func setDataProvider(dataProvider:MyPlacesListDataProvider) {

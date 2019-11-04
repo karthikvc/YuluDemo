@@ -51,7 +51,7 @@ extension EditAPIService {
                 print(myJSONError)
             }
             
-            completion(nil,error)
+            //completion(nil,error)
         }
         task.resume()
         

@@ -10,11 +10,11 @@ import Foundation
 
 
 public class ImageupLoadViewModel {
-    var desinationViewModel : MyPlaceDetailViewModel!
+    var desinationViewModel : ImageLoadModelViewProtocal!
     var dataProvider : ImageUploadAPIDataProvider!
     public var showAlert:((String?)->())?
     
-    init(viewModel: MyPlaceDetailViewModel) {
+    init(viewModel: ImageLoadModelViewProtocal) {
         
         self.desinationViewModel = viewModel
         self.dataProvider = ImageUploadAPIDataProvider()
@@ -22,6 +22,8 @@ public class ImageupLoadViewModel {
     
     
     func uploadImageBy(file: String){
+        
+        if self.desinationViewModel.IsEditMode {
         
         self.updateImageeBy(self.desinationViewModel.getPlaceItem(), file: file) { (result, error) in
             
@@ -31,7 +33,10 @@ public class ImageupLoadViewModel {
                 NotificationCenter.default.post(name: NSNotification.Name("UpdatePlace"), object: nil, userInfo: nil)
             }
         }
-        
+        } else {
+            self.desinationViewModel.ImageFile = file
+            self.showAlert?("Success")
+        }
     }
 
 }

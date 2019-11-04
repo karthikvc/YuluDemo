@@ -34,7 +34,8 @@ extension AddApiResource {
         urlParser.queryItems = [
             URLQueryItem(name: "title", value: myplace.title),
             URLQueryItem(name: "latitude", value: String (myplace.latitude)),
-            URLQueryItem(name: "longitude", value: String(myplace.longitude))
+            URLQueryItem(name: "longitude", value: String(myplace.longitude)),
+            URLQueryItem(name: "description", value: String(myplace.description))
         ]
         let httpBodyString = urlParser.percentEncodedQuery
         
