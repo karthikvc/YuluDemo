@@ -23,6 +23,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="myPlaceTableViewCell" rowHeight="110" id="YZh-Kc-Fa7" customClass="MyPlaceTableViewCell" customModule="YuluDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="335" height="110"/>
@@ -66,7 +67,7 @@
                                                         <constraint firstAttribute="width" constant="29" id="foZ-ku-eh6"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="31"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" red="0.4911360145" green="0.4911940098" blue="0.49110257629999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -89,7 +90,7 @@
                                                 <constraint firstItem="lpe-OZ-eqz" firstAttribute="leading" secondItem="1jE-Dh-Ku5" secondAttribute="leading" id="x76-Sn-BP6"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" red="0.62148693244794517" green="0.5458551049" blue="0.73275005412054794" alpha="0.45646939212328769" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.86872146118721449" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                 <real key="value" value="20"/>
@@ -191,6 +192,7 @@
                             </label>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CnL-JC-jtk">
                                 <rect key="frame" x="27" y="441" width="309" height="30"/>
+                                <color key="backgroundColor" red="0.86997872591018677" green="0.87007695436477661" blue="0.86992210149765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -202,9 +204,14 @@
                             </textField>
                             <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="detail" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yfo-13-hEQ">
                                 <rect key="frame" x="27" y="494" width="309" height="151"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872591018677" green="0.87007695436477661" blue="0.86992210149765015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42r-fT-ZkZ">
                                 <rect key="frame" x="300" y="20" width="50" height="50"/>
@@ -229,7 +236,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.8270753026008606" green="0.79664093255996704" blue="0.87715798616409302" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="H1Y-BS-WRB" firstAttribute="trailing" secondItem="KbE-VH-Vr8" secondAttribute="trailing" constant="20" id="0Jw-AA-FLO"/>
                             <constraint firstItem="H1Y-BS-WRB" firstAttribute="trailing" secondItem="42r-fT-ZkZ" secondAttribute="trailing" constant="25" id="1AW-ue-ZJk"/>
@@ -294,13 +301,14 @@
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Edit Title here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VcN-R9-xNC">
                                 <rect key="frame" x="38" y="124" width="268" height="30"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sub Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XYX-By-TwR">
                                 <rect key="frame" x="38" y="177" width="268" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="gVT-mo-LPk"/>
                                 </constraints>
@@ -312,7 +320,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgC-QX-Gw5">
                                 <rect key="frame" x="44" y="431" width="262" height="51"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="SMI-TV-yeW"/>
                                 </constraints>
@@ -340,14 +348,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFy-S3-ohD">
                                 <rect key="frame" x="44" y="343" width="262" height="51"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="HdO-pe-sUi"/>
                                 </constraints>
                                 <state key="normal" title="Change Image"/>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.82707530259999995" green="0.79664093260000002" blue="0.87715798619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="sDh-WQ-Zdk" firstAttribute="trailing" secondItem="VcN-R9-xNC" secondAttribute="trailing" constant="69" id="9JM-Q4-4da"/>
                             <constraint firstItem="bgC-QX-Gw5" firstAttribute="top" secondItem="bFy-S3-ohD" secondAttribute="bottom" constant="37" id="DHu-I9-ssn"/>
@@ -407,6 +415,7 @@
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tiitle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vun-dB-oBF">
                                 <rect key="frame" x="46" y="126" width="265" height="30"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -416,7 +425,7 @@
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Sub Title" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ILe-nh-JLh">
                                 <rect key="frame" x="46" y="183" width="268" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="gZX-6d-f7r"/>
                                 </constraints>
@@ -433,7 +442,7 @@
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sxC-7e-upj">
                                 <rect key="frame" x="46" y="348" width="265" height="51"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="K5L-5V-6pn"/>
                                 </constraints>
@@ -449,7 +458,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7y-ar-P2z">
                                 <rect key="frame" x="48" y="430" width="267" height="51"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.86997872590000003" green="0.87007695439999999" blue="0.86992210150000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="51" id="3zQ-tN-b6x"/>
                                 </constraints>
@@ -473,7 +482,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.82707530259999995" green="0.79664093260000002" blue="0.87715798619999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="QvT-3X-R5e" firstAttribute="top" secondItem="gAF-vV-BDC" secondAttribute="top" constant="562" id="2Ii-Pb-PRI"/>
                             <constraint firstItem="gAF-vV-BDC" firstAttribute="trailing" secondItem="ILe-nh-JLh" secondAttribute="trailing" constant="61" id="31P-mE-l5R"/>
